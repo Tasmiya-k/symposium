@@ -1,0 +1,68 @@
+{
+    "events": [
+        {
+            "title": "Case Studies in Sustainability: Expert Talks",
+            "description": "Present real-world success stories from organizations adopting sustainable technologies and the measurable impact of those efforts.",
+            "date": "2023-09-15",
+            "time": "10:00 AM - 12:00 PM",
+            "location": "Main Auditorium",
+            "category": "Seminar"
+        },
+        {
+            "title": "Technology Demonstrations: Workshops",
+            "description": "Live demonstrations on Sustainability-Focused Themes",
+            "date": "2023-09-16",
+            "time": "2:00 PM - 5:00 PM",
+            "location": "Innovation Lab",
+            "category": "Workshop"
+        },
+        {
+            "title": "Hackathon for Sustainability",
+            "description": "Team-based competition to develop innovative solutions to real-world sustainability challenges within a limited timeframe. A special prize pool for the competition.",
+            "date": "2023-09-17",
+            "time": "9:00 AM - 9:00 PM",
+            "location": "Computer Labs",
+            "category": "Competition"
+        },
+        {
+            "title": "Start-up showcases: E-Summit",
+            "description": "Aims to create a dynamic platform for knowledge exchange, collaboration and showcasing talent, empowering participants to turn ideas into impactful ventures through Panel Discussion, Podcasts, Hackpreneurship. A special prize pool for the competition.",
+            "date": "2023-09-18",
+            "time": "10:00 AM - 6:00 PM",
+            "location": "Conference Hall",
+            "category": "Summit"
+        },
+        {
+            "title": "Ph.D. Colloquium: Presentation Arena",
+            "description": "Provide a platform for students and researchers to showcase their work. A special prize pool for the competition.",
+            "date": "2023-09-19",
+            "time": "11:00 AM - 4:00 PM",
+            "location": "Seminar Rooms",
+            "category": "Presentation"
+        },
+        {
+            "title": "Knowledge series: Tech Ignite",
+            "description": "A curated collection of educational sessions designed to foster learning, inspire innovation, and share insights centered around sustainability focused themes.",
+            "date": "2023-09-20",
+            "time": "9:00 AM - 5:00 PM",
+            "location": "Lecture Halls",
+            "category": "Educational"
+        },
+        {
+            "title": "Industrial Tour",
+            "description": "On-site tours of cutting-edge research facilities.",
+            "date": "2023-09-21",
+            "time": "10:00 AM - 3:00 PM",
+            "location": "Various Locations",
+            "category": "Tour"
+        },
+        {
+            "title": "Networking Opportunities",
+            "description": "A unique chance to connect with peers, academics, and industry professionals to foster collaboration and knowledge exchange.",
+            "date": "2023-09-22",
+            "time": "6:00 PM - 9:00 PM",
+            "location": "Grand Hall",
+            "category": "Networking"
+        }
+    ]
+}
