@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Dark Forest Theme",
+    "description": "A mystical dark forest theme with deep greens and shadows. Perfect for nature enthusiasts and adventurers.",
+    "image": "sustainibility.jpg"
+  },
+  {
+    "title": "Ocean Breeze Theme",
+    "description": "A calming ocean breeze theme featuring serene blues and waves. Ideal for coastal living and beach lovers.",
+    "image": "hackathon.jpeg"
+  },
+  {
+    "title": "Mountain Escape Theme",
+    "description": "A tranquil mountain escape theme with earthy tones and majestic landscapes. Great for those seeking peace and seclusion.",
+    "image": "tech_workshops.jpeg"
+  },
+  {
+    "title": "Urban Cityscape Theme",
+    "description": "A dynamic urban cityscape theme showcasing vibrant city lights and modern architecture. Perfect for city dwellers and nightlife enthusiasts.",
+    "image": "E-summit.jpeg"
+  }
+]
