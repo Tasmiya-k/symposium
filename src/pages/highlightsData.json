@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Quantum Computing",
+    "description": "Quantum computing uses quantum mechanics to solve complex problems faster, revolutionizing cryptography, AI, and more.",
+    "image": "/themes/quantum_computing.jpg",
+    "buttonText": "See More"
+  },
+  {
+    "id": 2,
+    "title": "Innovation",
+    "description": "Discover the cutting-edge advancements shaping the future.",
+    "image": "/themes/dl_in_medicine.jpg",
+    "buttonText": "Learn More"
+  },
+  {
+    "id": 3,
+    "title": "Sustainability",
+    "description": "Explore the steps towards a greener, cleaner planet.",
+    "image": "/themes/sustainability.jpg",
+    "buttonText": "Explore"
+  }
+]
