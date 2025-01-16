@@ -7,7 +7,7 @@ const Events = () => {
             <div className="container mx-auto px-6 py-10">
                 {/* Page Header */}
                 <h1 className="text-4xl font-extrabold text-center mb-10 text-teal-400">
-                    Upcoming Events
+                    Explore Events
                 </h1>
 
                 {/* Events Grid */}
@@ -15,35 +15,46 @@ const Events = () => {
                     {eventsData.events.map((event, index) => (
                         <div
                             key={index}
-                            className="bg-gray-800 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 p-6"
+                            className="group relative bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-500 hover:rotate-2 hover:scale-105"
                         >
-                            {/* Event Title */}
-                            <h2 className="text-2xl font-bold text-teal-300 mb-4">
-                                {event.title}
-                            </h2>
-                            {/* Event Description */}
-                            <p className="text-gray-300 text-sm mb-6">
-                                {event.description}
-                            </p>
-                            {/* Event Details */}
-                            <div className="text-sm space-y-2">
-                                <p>
-                                    <span className="font-semibold text-teal-400">Date: </span>
-                                    {event.date}
+                            {/* Animated Gradient Background */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-teal-500 via-blue-500 to-purple-500 opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+
+                            {/* Event Content */}
+                            <div className="relative z-10 p-6">
+                                {/* Event Image */}
+                                <img
+                                    src={event.image}
+                                    alt={event.title}
+                                    className="w-full h-40 object-cover rounded-lg mb-4 bg-white"
+                                />
+                                {/* Event Title */}
+                                <h2 className="text-2xl font-bold text-teal-300 mb-4">
+                                    {event.title}
+                                </h2>
+                                {/* Event Description */}
+                                <p className="text-gray-300 text-sm mb-6">
+                                    {event.description}
                                 </p>
-                                <p>
-                                    <span className="font-semibold text-teal-400">Time: </span>
-                                    {event.time}
-                                </p>
-                                <p>
-                                    <span className="font-semibold text-teal-400">Location: </span>
-                                    {event.location}
-                                </p>
-                                <p>
-                                    <span className="font-semibold text-teal-400">Category: </span>
-                                    {event.category}
-                                </p>
+                                {/* Event Details */}
+                                <div className="text-sm space-y-2">
+                                    <p>
+                                        <span className="font-semibold text-teal-400">Date: </span>
+                                        {event.date}
+                                    </p>
+                                    <p>
+                                        <span className="font-semibold text-teal-400">Time: </span>
+                                        {event.time}
+                                    </p>
+                                    <p>
+                                        <span className="font-semibold text-teal-400">Category: </span>
+                                        {event.category}
+                                    </p>
+                                </div>
                             </div>
+
+                            {/* Overlay for Cool Effects */}
+                            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
                         </div>
                     ))}
                 </div>

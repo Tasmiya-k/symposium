@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 
 const Header = () => {
@@ -14,8 +14,14 @@ const Header = () => {
 
     return (
         <header className="bg-gray-900 text-white border-b border-gray-800">
-            <div className="container mx-auto px-4 py-4 flex justify-between items-center ">
+            <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 <div className="flex items-center space-x-4">
+                    {/* Square Logo */}
+                    <img
+                        src="/ruby.png"
+                        alt="Symposium Logo"
+                        className="h-14 w-14 object-contain"
+                    />
                     <div className="text-2xl font-bold">Symposium</div>
                 </div>
                 <nav className="hidden md:flex space-x-6">
@@ -59,4 +65,3 @@ const Header = () => {
 };
 
 export default Header;
-
