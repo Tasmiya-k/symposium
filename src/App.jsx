@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Events from "./pages/Events";
 import Committee from "./pages/committee";
 import Home from "./pages/Home";
+import Registration from "./pages/registration";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/committee" element={<Committee />} />
           <Route path="/" element={<Home />} />
+          <Route path="/registration" element={<Registration />} />
         </Routes>
       </div>
       <Footer />
