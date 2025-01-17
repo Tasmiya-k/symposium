@@ -88,7 +88,6 @@ const Footer = () => {
                     <div className="space-y-6">
                         <h3 className="text-xl font-semibold">Find Us</h3>
                         <div className="relative h-60 rounded overflow-hidden">
-
                             <iframe
                                 title="VESIT Location"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4094415404234!2d72.8892177!3d19.045727499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8add9569a29%3A0xb7ad04bf9a389df7!2sVivekanand%20Education%20Society&#39;s%20Institute%20Of%20Technology%20(VESIT)!5e0!3m2!1sen!2sin!4v1737008577029!5m2!1sen!2sin"
@@ -100,9 +99,9 @@ const Footer = () => {
                                 referrerPolicy="no-referrer-when-downgrade"
                                 className="shadow-md"
                             ></iframe>
-                            <div className="absolute inset-0 "></div>
                         </div>
                     </div>
+
                 </div>
 
                 {/* Footer Bottom */}
