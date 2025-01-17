@@ -7,24 +7,26 @@ const ThemeCard = () => {
       {themeData.map((theme, index) => (
         <div
           key={index}
-          className="bg-gray-800 rounded-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 p-4"
+          className="group relative bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-500 hover:rotate-2 hover:scale-105"
         >
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-500 via-blue-500 to-purple-500 opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
           {/* Theme Image */}
-          <div className="overflow-hidden rounded-lg mb-2">
+          <div className="relative z-10 p-8">
             <img
               src={theme.image}
               alt={theme.title}
-              className="w-full h-60 rounded-tl-lg rounded-br-lg mb-2 object-cover"
+              className="w-full h-40 object-cover rounded-lg mb-3 bg-white"
             />
+
+            {/* Theme Title */}
+            <h2 className="text-2xl font-bold text-teal-300 mb-2">
+              {theme.title}
+            </h2>
+
+            {/* Theme Description */}
+            <p className="text-gray-300 text-md">{theme.description}</p>
           </div>
-
-          {/* Theme Title */}
-          <h2 className="text-2xl font-bold text-teal-300 mb-2">
-            {theme.title}
-          </h2>
-
-          {/* Theme Description */}
-          <p className="text-gray-300 text-sm mb-4">{theme.description}</p>
+          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
         </div>
       ))}
     </div>

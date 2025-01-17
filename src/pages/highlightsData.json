@@ -8,16 +8,37 @@
   },
   {
     "id": 2,
-    "title": "Innovation",
-    "description": "Discover the cutting-edge advancements shaping the future.",
+    "title": "Medical Deep Learning",
+    "description": "Focuses on cutting-edge advancements in deep learning techniques tailored for medical applications. These innovations are shaping the future of healthcare and",
     "image": "/themes/dl_in_medicine.jpg",
     "buttonText": "Learn More"
   },
   {
     "id": 3,
-    "title": "Sustainability",
-    "description": "Explore the steps towards a greener, cleaner planet.",
-    "image": "/themes/sustainability.jpg",
+    "title": "BioInspiredAI",
+    "description": "This field involves creating artificial intelligence systems inspired by natural processes, aiming to foster solutions for a greener and cleaner planet.",
+    "image": "/themes/bio_inspired_ai.jpg",
+    "buttonText": "Explore"
+  },
+  {
+    "id": 4,
+    "title": "Telecommunication Infrastructure Optimization",
+    "description": "Optimization of telecommunication infrastructure to enhance efficiency and reduce environmental impact, contributing to a more sustainable future.",
+    "image": "/themes/telecom.jpg",
+    "buttonText": "Explore"
+  },
+  {
+    "id": 5,
+    "title": "Global Energy Solutions",
+    "description": "Innovations aimed at improving energy efficiency and sustainability worldwide, working toward a cleaner planet.",
+    "image": "/themes/global_energy.jpg",
+    "buttonText": "Explore"
+  },
+  {
+    "id": 6,
+    "title": "MATLAB for Sustainability Applications",
+    "description": "Utilizing MATLAB to develop and implement solutions that promote sustainability and address environmental challenges.",
+    "image": "/themes/matlab.png",
     "buttonText": "Explore"
   }
 ]
