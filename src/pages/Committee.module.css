@@ -1,0 +1,24 @@
+.neon-box {
+    position: relative;
+    padding: 16px;
+    background-color: #1f2937;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00f9ff, 0 0 20px #00f9ff, 0 0 30px #00f9ff, 0 0 40px #00f9ff; /* Neon effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.neon-box:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 20px #00f9ff, 0 0 30px #00f9ff, 0 0 40px #00f9ff, 0 0 50px #00f9ff; /* Increase the neon glow on hover */
+}
+
+.neon-text {
+    color: #e0f7fa;
+    font-size: 1.125rem; /* Adjust font size for names */
+    font-weight: bold;
+}
+
+.neon-role {
+    color: #90a4ae;
+    font-size: 0.875rem; /* Adjust font size for roles */
+}

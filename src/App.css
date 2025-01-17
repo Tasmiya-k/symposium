@@ -1,0 +1,26 @@
+.neon-heading {
+    position: relative;
+    color: #00ffc3; /* Teal color */
+    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3, 0 0 20px #00ffc3, 0 0 40px #00ffc3;
+}
+
+.neon-heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #00ffc3; /* Neon border */
+    z-index: -1;
+    animation: neonBorder 1.5s infinite alternate;
+}
+
+@keyframes neonBorder {
+    0% {
+        box-shadow: 0 0 10px #00ffc3, 0 0 20px #00ffc3, 0 0 30px #00ffc3;
+    }
+    100% {
+        box-shadow: 0 0 30px #00ffc3, 0 0 40px #00ffc3, 0 0 50px #00ffc3;
+    }
+}
