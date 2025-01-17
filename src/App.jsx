@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Events from "./pages/Events";
 import Committee from "./pages/committee";
+import ContactUs from "./pages/contactus";
 import Home from "./pages/Home";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/events" element={<Events />} />
           <Route path="/committee" element={<Committee />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </div>
