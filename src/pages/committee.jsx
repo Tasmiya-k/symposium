@@ -150,12 +150,12 @@ const committeeData = [
     {
         title: "Advisory Committee",
         members: [
-            { name: "Dr. Prasad Ramanathan", role: "Sr. Director, Capgemini", image: "path/to/image8.jpg" },
-            { name: "Shri. Pankaj Doke", role: "Senior Scientist, Tata Consultancy Services", image: "path/to/image9.jpg" },
-            { name: "Mrs. Asha Ahuja", role: "Head of Digital Engineering, Cognizant", image: "path/to/image10.jpg" },
-            { name: "Shri. Amit Rambhia", role: "MD, Panache Digilife Ltd.", image: "path/to/image11.jpg" },
-            { name: "Dr. Archana Sharma", role: "Distinguished Scientist, BARC", image: "path/to/image12.jpg" },
-            { name: "Dr. Anita Kanwar", role: "Principal, VES College of Arts, Science & Commerce", image: "path/to/image13.jpg" },
+            { name: "Dr. Prasad Ramanathan", role: "Sr. Director, Capgemini", image: "/prasad.png" },
+            { name: "Shri. Pankaj Doke", role: "Senior Scientist, Tata Consultancy Services", image: "/pankaj.png" },
+            { name: "Mrs. Asha Ahuja", role: "Head of Digital Engineering, Cognizant", image: "/asha.png" },
+            { name: "Shri. Amit Rambhia", role: "MD, Panache Digilife Ltd.", image: "/amit.png" },
+            { name: "Dr. Archana Sharma", role: "Distinguished Scientist, BARC", image: "/archana.png" },
+            { name: "Dr. Anita Kanwar", role: "Principal, VES College of Arts, Science & Commerce", image: "/anita.png" },
             { name: "Shri. Devesh Rajadhyaksha", role: "Founder & CEO, CereLabs Pvt Ltd.", image: "path/to/image14.jpg" },
             { name: "Dr. Prasad Ramanathan", role: "Sr. Advisor, Capgemini, Mumbai", image: "path/to/image15.jpg" },
             { name: "Shri. Ajit Ambekar", role: "Software Engineer III, JP Morgan Chase", image: "path/to/image16.jpg" },
@@ -180,9 +180,9 @@ const committeeData = [
     {
         title: "Steering Committee",
         members: [
-            { name: "Dr. Gresha Bhatia", role: "Convener, Dy. HOD, Computer Engineering", image: "path/to/image23.jpg" },
-            { name: "Dr. Sharmila Sengupta", role: "Secretary, Associate Professor, Computer Engineering", image: "path/to/image24.jpg" },
-            { name: "Dr. Saylee Gharge", role: "Treasurer, Associate Professor, Electronics & Telecommunication", image: "path/to/image25.jpg" },
+            { name: "Dr. Gresha Bhatia", role: "Convener, Dy. HOD, Computer Engineering", image: "/gresha.png" },
+            { name: "Dr. Sharmila Sengupta", role: "Secretary, Associate Professor, Computer Engineering", image: "/sharmila.png" },
+            { name: "Dr. Saylee Gharge", role: "Treasurer, Associate Professor, Electronics & Telecommunication", image: "/saylee.png" },
         ],
     },
     {
@@ -219,13 +219,13 @@ const Committee = () => {
                 <h1 className="text-4xl font-extrabold text-center mb-10 text-teal-400">Committee Members</h1>
 
                 {/* Tabs for Teams */}
-                <div className="flex justify-center mb-6">
+                <div className="flex flex-wrap justify-center mb-6 gap-2">
                     {committeeData.map((section) => (
                         <button
                             key={section.title}
-                            className={`px-4 py-2 mx-2 rounded-lg font-semibold ${
+                            className={`px-4 py-2 mx-2 rounded-lg font-semibold transition-transform duration-300 ${
                                 selectedTeam === section.title
-                                    ? "bg-teal-500 text-white"
+                                    ? "bg-teal-500 text-white scale-105"
                                     : "bg-gray-700 text-gray-300 hover:bg-gray-600"
                             }`}
                             onClick={() => setSelectedTeam(section.title)}
@@ -247,8 +247,16 @@ const Committee = () => {
                                         key={index}
                                         className="flex flex-col items-center p-4 rounded-lg text-center shadow-lg transform transition duration-300 ease-in-out"
                                     >
-                                            <img src={member.image} width="280px" height="200px"></img>
-                                        </li>
+<div
+                                                className="neon-border p-4 rounded-lg w-full"
+                                                style={{
+                                                    border: "4px solid #14b8a6",
+                                                    boxShadow: "0 0 5px #14b8a6",
+                                                }}
+                                            >
+                                                <h2 className="text-xl font-bold">{member.name}</h2>
+                                                <p className="text-sm text-gray-300">{member.role}</p>
+                                            </div>                                        </li>
                                     ))}
                                 </ul>
                             </div>
