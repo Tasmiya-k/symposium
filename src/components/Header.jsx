@@ -8,7 +8,6 @@ const Header = () => {
         { name: 'Home', href: '/' },
         { name: 'Committee', href: '/committee' },
         { name: 'Events', href: '/events' },
-        // { name: 'Registration', href: '/registration' },
         { name: 'Contact Us', href: '/contact' },
     ];
 
@@ -24,7 +23,7 @@ const Header = () => {
                     />
                     <div className="text-2xl font-bold">Symposium</div>
                 </div>
-                <nav className="hidden md:flex space-x-6">
+                <nav className="hidden md:flex items-center space-x-6">
                     {navItems.map((item) => (
                         <a
                             key={item.name}
@@ -34,6 +33,14 @@ const Header = () => {
                             {item.name}
                         </a>
                     ))}
+                    <a
+                        href="https://forms.gle/Y7xUCvRZq18c3B5D9"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-300"
+                    >
+                        Registration
+                    </a>
                 </nav>
                 <div className="md:hidden">
                     <button
@@ -57,6 +64,15 @@ const Header = () => {
                                 {item.name}
                             </a>
                         ))}
+                        <a
+                            href="https://forms.gle/Y7xUCvRZq18c3B5D9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-300 text-center"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Registration
+                        </a>
                     </nav>
                 </div>
             )}
