@@ -1,18 +1,19 @@
 import React from "react";
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, Globe } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Globe } from "lucide-react";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
 
     const socialLinks = [
-        { icon: Facebook, href: "#", label: "Facebook" },
-        { icon: Twitter, href: "#", label: "Twitter" },
-        { icon: Instagram, href: "#", label: "Instagram" },
-        { icon: Linkedin, href: "#", label: "LinkedIn" },
+        { icon: Twitter, href: "https://x.com/vesitedu?t=U2cLvfg26xZL8dA0vU8TdQ&s=09", label: "Twitter" },
+        { icon: Facebook, href: "https://www.facebook.com/vesinstituteoftech?mibextid=ZbWKwL", label: "Facebook" },
+        { icon: Instagram, href: "https://www.instagram.com/vesitedu?igsh=MjFqYWd0ZzBzMTZh", label: "Instagram" },
+        { icon: Youtube, href: "https://www.instagram.com/vesitedu?igsh=MjFqYWd0ZzBzMTZh", label: "Youtube" },
+        { icon: Linkedin, href: "https://in.linkedin.com/school/vivekanand-education-societys-institute-of-technology-sindhi-society-chembur-mumbai-400-071/", label: "LinkedIn" },
     ];
 
     return (
-        <footer className="bg-gradient-to-b from-gray-900 to-black text-white pt-16 pb-8 border-t border-gray-800">
+        <footer className="bg-white text-black pt-16 pb-8 border-t border-red-500">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* College Info */}
@@ -25,17 +26,18 @@ const Footer = () => {
                                 className="h-20 object-contain"
                             />
                             {/* Name and Designation */}
-                            <div className="text-white">
+                            <div>
                                 <h3 className="text-lg font-semibold">
                                     Vivekanand Education Society's Institute of Technology
                                 </h3>
-                                <span className="text-sm text-gray-400 block mt-1">
+                                <span className="text-sm text-red-500 block mt-1">
                                     Autonomous Institute
                                 </span>
                             </div>
                         </div>
-                        <p className="text-sm text-gray-400">
-                            Vivekanand Education Society's Institute of Technology (VESIT) is committed to excellence in education and research in the field of engineering and technology.
+                        <p className="text-sm text-gray-700 ">
+                            Vivekanand Education Society's Institute of Technology (VESIT) established in 1984, is one of the premier autonomous engineering colleges affiliated with the University of Mumbai.
+                            {/* It provides undergraduate degrees in engineering across several disciplines: Electronics & Computer Science, Electronics & Telecommunication, Computer Engineering, Automation & Robotics, Information Technolog, Artificial Intelligence & Data Science. Postgraduate programs at VESIT include Master of Engineering in VLSI and Systems, Automation and Robotics, Information Technology and Master's in Computer Applications. VESIT is a Ph.D. center in Electronics, Computer Engineering, Information technology and also facilitates lifelong learning. */}
                         </p>
                         <div className="flex space-x-4">
                             {socialLinks.map((link) => (
@@ -43,7 +45,7 @@ const Footer = () => {
                                     key={link.label}
                                     href={link.href}
                                     aria-label={link.label}
-                                    className="hover:text-blue-400 transition duration-300 transform hover:scale-110"
+                                    className="hover:text-red-500 transition duration-300 transform hover:scale-110"
                                 >
                                     <link.icon size={24} />
                                 </a>
@@ -51,42 +53,43 @@ const Footer = () => {
                         </div>
                     </div>
 
-
-
                     {/* Contact Details */}
                     <div className="space-y-6">
-                        <h3 className="text-xl font-semibold">Contact Us</h3>
-                        <ul className="space-y-4 text-sm text-gray-400">
+                        <h3 className="text-xl font-semibold text-red-500">Contact Us</h3>
+                        <ul className="space-y-4 text-sm text-gray-700">
                             <li className="flex items-start">
-                                <MapPin size={18} className="mr-2 mt-1 flex-shrink-0 text-blue-400" />
+                                <MapPin size={18} className="mr-2 mt-1 flex-shrink-0 text-red-500" />
                                 <span>Hashu Advani Memorial Complex, Collector's Colony, Chembur, Mumbai - 400074</span>
                             </li>
                             <li className="flex items-center">
-                                <Phone size={18} className="mr-2 text-blue-400" />
-                                <a href="tel:+912261539400" className="hover:text-white transition duration-300">+91 22 6153 9400</a>
+                                <Phone size={18} className="mr-2 text-red-500" />
+                                <a href="tel:+912261539400" className="hover:text-red-500 transition duration-300">
+                                    +91 22 6153 9400
+                                </a>
                             </li>
                             <li className="flex items-center">
-                                <Mail size={18} className="mr-2 text-blue-400" />
-                                <a href="mailto:vesit@ves.ac.in" className="hover:text-white transition duration-300">vesit@ves.ac.in</a>
+                                <Mail size={18} className="mr-2 text-red-500" />
+                                <a href="mailto:vesit@ves.ac.in" className="hover:text-red-500 transition duration-300">
+                                    vesit@ves.ac.in
+                                </a>
                             </li>
                             <li className="flex items-center">
-                                <Globe size={18} className="mr-2 text-blue-400" />
+                                <Globe size={18} className="mr-2 text-red-500" />
                                 <a
                                     href="https://vesit.ves.ac.in/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="hover:text-white transition duration-300"
+                                    className="hover:text-red-500 transition duration-300"
                                 >
                                     website
                                 </a>
                             </li>
-
                         </ul>
                     </div>
 
                     {/* Google Map */}
                     <div className="space-y-6">
-                        <h3 className="text-xl font-semibold">Find Us</h3>
+                        <h3 className="text-xl font-semibold text-red-500">Find Us</h3>
                         <div className="relative h-60 rounded overflow-hidden">
                             <iframe
                                 title="VESIT Location"
@@ -97,23 +100,23 @@ const Footer = () => {
                                 allowFullScreen={false}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                className="shadow-md"
+                                className="shadow-md bor"
                             ></iframe>
                         </div>
                     </div>
-
                 </div>
 
                 {/* Footer Bottom */}
-                <div className="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-400">
+                <div className="mt-10 pt-4 border-t border-red-500 text-center text-sm text-gray-700">
                     <p>
                         &copy; {currentYear} Vivekanand Education Society's Institute of Technology. All rights reserved.
                     </p>
-                    <div className="mt-4 space-x-4">
-                        <a href="#" className="hover:text-blue-400 transition duration-300">
+                    <div className="mt-2 space-x-4">
+                        <a href="#" className="hover:text-red-500 transition duration-300">
                             Privacy Policy
                         </a>
-                        <a href="#" className="hover:text-blue-400 transition duration-300">
+                        
+                        <a href="#" className="hover:text-red-500 transition duration-300">
                             Terms of Service
                         </a>
                     </div>
@@ -124,4 +127,3 @@ const Footer = () => {
 };
 
 export default Footer;
-

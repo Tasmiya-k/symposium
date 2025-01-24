@@ -21,18 +21,18 @@ const ContactUs = () => {
     ];
 
     return (
-        <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
+        <div className="min-h-screen bg-white text-gray-800">
             <div className="container mx-auto px-6 py-10">
                 {/* Page Header */}
-                <h1 className="text-4xl font-extrabold text-center mb-10 text-teal-400">
+                <h1 className="text-4xl font-extrabold text-center mb-10 text-red-500">
                     Contact Us
                 </h1>
 
                 {/* Contact Details Section */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Address Section */}
-                    <div className="space-y-6 bg-gray-800 rounded-lg p-6 shadow-lg">
-                        <h2 className="text-2xl font-bold text-teal-300 mb-4">
+                    <div className="space-y-6 bg-gray-100 rounded-lg p-6 shadow-lg">
+                        <h2 className="text-2xl font-bold text-red-500 mb-4">
                             Our Address
                         </h2>
                         {/* Google Map */}
@@ -52,37 +52,37 @@ const ContactUs = () => {
                             </div>
                         </div>
                         <div className="flex items-start space-x-3">
-                            <MapPin className="text-teal-400 flex-shrink-0" size={24} />
+                            <MapPin className="text-red-500 flex-shrink-0" size={24} />
                             <p>
                                 Hashu Advani Memorial Complex, Collector's Colony,
                                 Chembur, Mumbai - 400074
                             </p>
                         </div>
                         <div className="flex items-start space-x-3">
-                            <Phone className="text-teal-400 flex-shrink-0" size={24} />
+                            <Phone className="text-red-500 flex-shrink-0" size={24} />
                             <a
                                 href="tel:+912261539400"
-                                className="text-teal-400 hover:underline"
+                                className="hover:underline"
                             >
                                 +91 22 6153 9400
                             </a>
                         </div>
                         <div className="flex items-start space-x-3">
-                            <Mail className="text-teal-400 flex-shrink-0" size={24} />
+                            <Mail className="text-red-500 flex-shrink-0" size={24} />
                             <a
                                 href="mailto:vesit@ves.ac.in"
-                                className="text-teal-400 hover:underline"
+                                className="hover:underline"
                             >
                                 vesit@ves.ac.in
                             </a>
                         </div>
                         <div className="flex items-start space-x-3">
-                            <Globe className="text-teal-400 flex-shrink-0" size={24} />
+                            <Globe className="text-red-500 flex-shrink-0" size={24} />
                             <a
                                 href="https://vesit.ves.ac.in"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-teal-400 hover:underline"
+                                className="hover:underline"
                             >
                                 https://vesit.ves.ac.in
                             </a>
@@ -90,21 +90,21 @@ const ContactUs = () => {
                     </div>
 
                     {/* Contact People Section */}
-                    <div className="space-y-6 bg-gray-800 rounded-lg p-6 shadow-lg">
-                        <h2 className="text-2xl font-bold text-teal-300 mb-4">
+                    <div className="space-y-6 bg-gray-100 rounded-lg p-6 shadow-lg">
+                        <h2 className="text-2xl font-bold text-red-500 mb-4">
                             Contact Our Team
                         </h2>
                         <ul className="space-y-4">
                             {contacts.map((contact, index) => (
                                 <li
                                     key={index}
-                                    className="p-4 bg-gray-700 rounded-lg shadow-md"
+                                    className="p-4 bg-white border border-gray-200 rounded-lg shadow-md"
                                 >
-                                    <h3 className="text-lg font-semibold text-teal-400">
+                                    <h3 className="text-lg font-semibold text-gray-800">
                                         {contact.name}
                                     </h3>
-                                    <p className="text-gray-300">
-                                        <Mail size={18} className="inline mr-2 text-teal-400" />
+                                    <p className="text-gray-600">
+                                        <Mail size={18} className="inline mr-2 text-red-500" />
                                         <a
                                             href={`mailto:${contact.email}`}
                                             className="hover:underline"
@@ -112,8 +112,8 @@ const ContactUs = () => {
                                             {contact.email}
                                         </a>
                                     </p>
-                                    <p className="text-gray-300">
-                                        <Phone size={18} className="inline mr-2 text-teal-400" />
+                                    <p className="text-gray-600">
+                                        <Phone size={18} className="inline mr-2 text-red-500" />
                                         <a
                                             href={`tel:${contact.phone}`}
                                             className="hover:underline"

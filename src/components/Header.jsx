@@ -12,32 +12,41 @@ const Header = () => {
     ];
 
     return (
-        <header className="bg-gray-900 text-white border-b border-gray-800">
+        <header className="bg-white text-red-600 border-b border-red-200">
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <div className="flex items-center space-x-4">
-                    {/* Square Logo */}
-                    <img
-                        src="/ruby.png"
-                        alt="Symposium Logo"
-                        className="h-14 w-14 object-contain"
-                    />
-                    <div className="text-2xl font-bold">Symposium</div>
+                <div className="relative flex items-center justify-center">
+                    {/* Border around the logo */}
+                    <div className="border-2 border-[#f60404] py-2 px-4 rounded-md relative">
+                        {/* Square Logo */}
+                        <img
+                            src="/headerlogo.png"
+                            alt="Symposium Logo"
+                            className="h-14 w-[400px] object-contain"
+                        />
+                    </div>
+                    {/* Legend-like text */}
+                    <div className="absolute -bottom-3 bg-white px-4 text-md font-bold">
+                        Symposium
+                    </div>
                 </div>
+
                 <nav className="hidden md:flex items-center space-x-6">
                     {navItems.map((item) => (
                         <a
                             key={item.name}
                             href={item.href}
-                            className="hover:text-blue-400 transition duration-300"
+                            className="relative group text-red-600 text-lg hover:text-red-800 transition duration-300"
                         >
                             {item.name}
+                            {/* Animated Underline */}
+                            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
                         </a>
                     ))}
                     <a
                         href="https://forms.gle/Y7xUCvRZq18c3B5D9"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-300"
+                        className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-lg transition duration-300"
                     >
                         Registration
                     </a>
@@ -45,7 +54,7 @@ const Header = () => {
                 <div className="md:hidden">
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        className="text-white focus:outline-none"
+                        className="text-red-600 focus:outline-none"
                     >
                         {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
@@ -58,17 +67,19 @@ const Header = () => {
                             <a
                                 key={item.name}
                                 href={item.href}
-                                className="block hover:text-blue-400 transition duration-300"
+                                className="relative group block text-red-600 text-lg hover:text-red-800 transition duration-300"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 {item.name}
+                                {/* Animated Underline */}
+                                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
                             </a>
                         ))}
                         <a
                             href="https://forms.gle/Y7xUCvRZq18c3B5D9"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition duration-300 text-center"
+                            className="block bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded text-lg transition duration-300 text-center"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Registration
