@@ -35,10 +35,27 @@ const Footer = () => {
                                 </span>
                             </div>
                         </div>
-                        <p className="text-sm text-gray-700 ">
+                        <p className="text-sm text-gray-700">
                             Vivekanand Education Society's Institute of Technology (VESIT) established in 1984, is one of the premier autonomous engineering colleges affiliated with the University of Mumbai.
-                            {/* It provides undergraduate degrees in engineering across several disciplines: Electronics & Computer Science, Electronics & Telecommunication, Computer Engineering, Automation & Robotics, Information Technolog, Artificial Intelligence & Data Science. Postgraduate programs at VESIT include Master of Engineering in VLSI and Systems, Automation and Robotics, Information Technology and Master's in Computer Applications. VESIT is a Ph.D. center in Electronics, Computer Engineering, Information technology and also facilitates lifelong learning. */}
                         </p>
+                        <div className="space-x-4">
+                            <a
+                                href="/path-to-brochure.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
+                            >
+                                Symposium Brochure
+                            </a>
+                            <a
+                                href="/path-to-schedule.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
+                            >
+                                Symposium Schedule
+                            </a>
+                        </div>
                         <div className="flex space-x-4">
                             {socialLinks.map((link) => (
                                 <a
@@ -85,6 +102,7 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
+
                     </div>
 
                     {/* Google Map */}
@@ -115,7 +133,7 @@ const Footer = () => {
                         <a href="#" className="hover:text-red-500 transition duration-300">
                             Privacy Policy
                         </a>
-                        
+
                         <a href="#" className="hover:text-red-500 transition duration-300">
                             Terms of Service
                         </a>
