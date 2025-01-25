@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-300">
       {/* Hero Section */}
-      <div className="relative w-full min-h-screen bg-[url('./vesit_college.png')] bg-cover bg-center">
+      <div className="relative w-full min-h-screen bg-[url('/vesit_college.png')] bg-cover bg-center">
         {/* Overlay for opacity */}
         <div className="absolute inset-0 bg-white bg-opacity-60"></div>
 
