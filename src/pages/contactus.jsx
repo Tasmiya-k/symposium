@@ -24,7 +24,7 @@ const ContactUs = () => {
         <div className="min-h-screen bg-white text-gray-800">
             <div className="container mx-auto px-6 py-10">
                 {/* Page Header */}
-                <h1 className="text-4xl font-extrabold text-center mb-10 text-red-500">
+                <h1 className="text-3xl font-bold text-red-600 mb-10 text-center">
                     Contact Us
                 </h1>
 

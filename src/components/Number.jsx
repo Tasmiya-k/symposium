@@ -48,7 +48,7 @@ const Number = () => {
                 >
                   {num1.toLocaleString()}+
                 </div>
-                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-400">
+                <div className="font-semibold text-2xl bg-clip-text text-gray-800 ">
                   Themes
                 </div>
               </h2>
@@ -63,7 +63,7 @@ const Number = () => {
                 >
                   {num2.toLocaleString()}+
                 </div>
-                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r  from-gray-800 to-gray-400">
+                <div className="font-semibold text-2xl bg-clip-text textgray-800">
                   Hours of Hacking
                 </div>
               </h2>
@@ -78,7 +78,7 @@ const Number = () => {
                 >
                   {num3.toLocaleString()}+
                 </div>
-                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r  from-gray-800 to-gray-400">
+                <div className="font-semibold text-2xl bg-clip-text textgray-800">
                   Participants
                 </div>
               </h2>

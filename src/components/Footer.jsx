@@ -8,7 +8,7 @@ const Footer = () => {
         { icon: Twitter, href: "https://x.com/vesitedu?t=U2cLvfg26xZL8dA0vU8TdQ&s=09", label: "Twitter" },
         { icon: Facebook, href: "https://www.facebook.com/vesinstituteoftech?mibextid=ZbWKwL", label: "Facebook" },
         { icon: Instagram, href: "https://www.instagram.com/vesitedu?igsh=MjFqYWd0ZzBzMTZh", label: "Instagram" },
-        { icon: Youtube, href: "https://www.instagram.com/vesitedu?igsh=MjFqYWd0ZzBzMTZh", label: "Youtube" },
+        { icon: Youtube, href: "https://www.youtube.com/@vesitube", label: "Youtube" },
         { icon: Linkedin, href: "https://in.linkedin.com/school/vivekanand-education-societys-institute-of-technology-sindhi-society-chembur-mumbai-400-071/", label: "LinkedIn" },
     ];
 
@@ -38,7 +38,7 @@ const Footer = () => {
                         <p className="text-sm text-gray-700">
                             Vivekanand Education Society's Institute of Technology (VESIT) established in 1984, is one of the premier autonomous engineering colleges affiliated with the University of Mumbai.
                         </p>
-                        <div className="space-x-4">
+                        <div className="flex space-x-4">
                             <a
                                 href="/path-to-brochure.pdf"
                                 target="_blank"

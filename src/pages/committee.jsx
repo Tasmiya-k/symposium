@@ -5,13 +5,13 @@ const committeeData = [
     {
         title: "Patrons",
         members: [
-            { name: "Shri. B. L. Boolani", role: "Managing Trustee, VES"},
+            { name: "Shri. B. L. Boolani", role: "Managing Trustee, VES" },
             { name: "Shri. Suresh Malkani", role: "President, VES" },
             { name: "Shri. Rajesh Gehani", role: "Secretary, VES" },
             { name: "Shri. Prakash Lulla", role: "Treasurer, VES" },
             { name: "Shri. Bharat Ajwani", role: "Member, VES" },
             { name: "Shri. Vijay Talreja", role: "Member, VES" },
-            { name: "Shri. Deepak Nehlani", role: "Member, VES"},
+            { name: "Shri. Deepak Nehlani", role: "Member, VES" },
         ],
     },
     {
@@ -70,7 +70,7 @@ const committeeData = [
             { name: "Dr. Kavita Tewari", role: "HOD, Electronics & Computer Science", image: "path/to/image27.jpg" },
             { name: "Dr. C. D. Rawat", role: "HOD, Electronics & Telecommunication", image: "path/to/image28.jpg" },
             { name: "Dr. Shalu Chopra", role: "HOD, Information Technology", image: "path/to/image29.jpg" },
-           
+
         ],
     },
 ];
@@ -92,11 +92,10 @@ const Committee = () => {
                     {committeeData.map((section) => (
                         <button
                             key={section.title}
-                            className={`px-5 py-3 rounded-lg text-sm font-medium transition-all duration-200 transform ${
-                                selectedTeam === section.title
+                            className={`px-5 py-3 rounded-lg text-sm font-medium transition-all duration-200 transform ${selectedTeam === section.title
                                     ? "bg-red-600 text-white shadow-lg scale-105"
                                     : "bg-gray-200 text-gray-700 hover:bg-gray-300 hover:shadow-md"
-                            }`}
+                                }`}
                             onClick={() => setSelectedTeam(section.title)}
                         >
                             {section.title}
@@ -114,7 +113,7 @@ const Committee = () => {
                                     {section.members.map((member, index) => (
                                         <li
                                             key={index}
-                                            className="flex flex-col items-center p-6 rounded-lg text-center shadow-sm transform transition duration-300 ease-in-out hover:scale-105"
+                                            className="flex flex-col items-center p-6 rounded-lg text-center transform transition duration-300 ease-in-out hover:scale-105"
                                         >
                                             <div
                                                 className="border border-red-600 p-4 rounded-lg w-full"

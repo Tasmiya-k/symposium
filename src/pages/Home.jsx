@@ -15,7 +15,7 @@ const Home = () => {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center justify-center text-center text-white space-y-6 px-4 sm:px-6">
-        <h3 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-red-500 ">
+          <h3 className="text-xl sm:text-3xl md:text-4xl font-bold text-red-500 pt-4">
             ISTE Approved
           </h3>
           {/* Title Image */}
@@ -42,7 +42,7 @@ const Home = () => {
           </div>
 
           {/* Theme Title */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-red-500">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-red-500 pb-4">
             Technology Advancements for Sustainability
           </h3>
         </div>
@@ -50,7 +50,7 @@ const Home = () => {
 
       <div className="row-span-1 col-span-full flex items-center justify-center mt-10">
         <a href="/events">
-          <button className="px-10 py-6 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+          <button className="px-10 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
             View Schedule
           </button>
         </a>
@@ -62,14 +62,14 @@ const Home = () => {
       </div>
 
       {/* Themes Section */}
-      <div className="text-center mt-8 px-4">
+      <div className="text-center mt-16 px-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-red-500">
           THEMES
         </h3>
       </div>
 
       {/* Highlights Cards */}
-      <div className="flex flex-wrap justify-center gap-8 mt-8 mx-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 mx-10">
         {highlightsData.map((item) => (
           <HighlightsCard
             key={item.id}
@@ -81,20 +81,21 @@ const Home = () => {
         ))}
       </div>
 
+
       {/* Key Highlights Section */}
-      <div className="text-center mt-8 px-4">
+      <div className="text-center mt-16 px-4">
         <h3 className="text-3xl sm:text-4xl font-extrabold text-red-500">
           KEY HIGHLIGHTS
         </h3>
       </div>
 
       {/* Theme Cards */}
-      <div className="mt-8 mx-6 p-8">
+      <div className="mt-8 mx-10">
         <ThemeCard />
       </div>
 
       {/* Number Section */}
-      <div className="flex flex-wrap justify-center gap-6 mt-8 mx-6 px-4 mb-12">
+      <div className="flex flex-wrap justify-center gap-6 mx-6 px-4 mb-12 mt-12">
         <Number />
       </div>
     </div>

@@ -126,10 +126,10 @@ const Events = () => {
     }
 
     return (
-        <div className="p-4 bg-gray-100 min-h-screen">
-            <h1 className="text-3xl font-bold text-red-600 mb-6 text-center">Event Schedule</h1>
+        <div className="px-6 bg-gray-100 min-h-screen py-10">
+            <h1 className="text-3xl font-bold text-red-600 mb-10 text-center">Event Schedule</h1>
             {Object.entries(eventsData).map(([day, sessions]) => (
-                <div key={day} className="mb-4 bg-white rounded-lg shadow-md overflow-hidden">
+                <div key={day} className="mb-4 bg-white rounded-lg shadow-md overflow-hidden border-2 border-[#f60404]">
                     <button
                         onClick={() => toggleDay(day)}
                         className="w-full text-left py-4 px-6 flex justify-between items-center bg-red-500 text-white hover:bg-red-600 transition-colors duration-200"
