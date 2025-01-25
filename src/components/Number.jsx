@@ -43,12 +43,12 @@ const Number = () => {
             <div className="container text-center">
               <h2>
                 <div
-                  className="flex justify-center text-teal-400 text-5xl font-extrabold mb-2"
+                  className="flex justify-center text-red-600 text-5xl font-extrabold mb-2"
                   style={{ width: "6ch" }}
                 >
                   {num1.toLocaleString()}+
                 </div>
-                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300">
+                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-gray-400">
                   Themes
                 </div>
               </h2>
@@ -58,12 +58,12 @@ const Number = () => {
             <div className="container text-center">
               <h2>
                 <div
-                  className="flex justify-center text-teal-400 text-5xl font-extrabold mb-2"
+                  className="flex justify-center text-red-600 text-5xl font-extrabold mb-2"
                   style={{ width: "6ch" }}
                 >
                   {num2.toLocaleString()}+
                 </div>
-                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300">
+                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r  from-gray-800 to-gray-400">
                   Hours of Hacking
                 </div>
               </h2>
@@ -73,12 +73,12 @@ const Number = () => {
             <div className="container text-center">
               <h2>
                 <div
-                  className="flex justify-center text-teal-400 text-5xl font-extrabold mb-2"
+                  className="flex justify-center text-red-600 text-5xl font-extrabold mb-2"
                   style={{ width: "6ch" }}
                 >
                   {num3.toLocaleString()}+
                 </div>
-                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-indigo-300">
+                <div className="font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-r  from-gray-800 to-gray-400">
                   Participants
                 </div>
               </h2>

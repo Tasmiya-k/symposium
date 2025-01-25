@@ -42,45 +42,45 @@ const Countdown = () => {
   return (
     <div className="flex items-start justify-center w-full gap-4 count-down-main">
       <div className="timer w-16">
-        <div className="bg-teal-400 py-4 px-2 rounded-lg overflow-hidden">
-          <h3 className="countdown-element days font-Cormorant font-bold text-2xl text-gray-800 text-center">
+        <div className="bg-red-500 py-4 px-2 rounded-lg overflow-hidden">
+          <h3 className="countdown-element days font-Cormorant font-bold text-2xl text-white text-center">
             {time.days}
           </h3>
         </div>
-        <p className="text-lg font-Cormorant font-medium text-white mt-1 text-center w-full">
+        <p className="text-lg font-Cormorant font-medium text-black mt-1 text-center w-full">
           days
         </p>
       </div>
       <h3 className="font-manrope font-semibold text-2xl text-gray-900">:</h3>
       <div className="timer w-16">
-        <div className="bg-teal-400 py-4 px-2 rounded-lg overflow-hidden">
-          <h3 className="countdown-element hours font-Cormorant font-bold text-2xl text-gray-800 text-center">
+        <div className="bg-red-500 py-4 px-2 rounded-lg overflow-hidden">
+          <h3 className="countdown-element hours font-Cormorant font-bold text-2xl text-white text-center">
             {time.hours}
           </h3>
         </div>
-        <p className="text-lg font-Cormorant font-normal text-white mt-1 text-center w-full">
+        <p className="text-lg font-Cormorant font-medium text-black mt-1 text-center w-full">
           hours
         </p>
       </div>
       <h3 className="font-manrope font-semibold text-2xl text-gray-900">:</h3>
       <div className="timer w-16">
-        <div className="bg-teal-400 py-4 px-2 rounded-lg overflow-hidden">
-          <h3 className="countdown-element minutes font-Cormorant font-bold text-2xl text-gray-800 text-center">
+        <div className="bg-red-500 py-4 px-2 rounded-lg overflow-hidden">
+          <h3 className="countdown-element minutes font-Cormorant font-bold text-2xl text-white text-center">
             {time.minutes}
           </h3>
         </div>
-        <p className="text-lg font-Cormorant font-normal text-white mt-1 text-center w-full">
+        <p className="text-lg font-Cormorant font-medium text-black mt-1 text-center w-full">
           minutes
         </p>
       </div>
       <h3 className="font-manrope font-semibold text-2xl text-gray-900">:</h3>
       <div className="timer w-16">
-        <div className="bg-teal-400 py-4 px-2 rounded-lg overflow-hidden ">
-          <h3 className="countdown-element seconds font-Cormorant font-bold text-2xl text-gray-800 text-center ">
+        <div className="bg-red-500 py-4 px-2 rounded-lg overflow-hidden ">
+          <h3 className="countdown-element seconds font-Cormorant font-bold text-2xl text-white text-center ">
             {time.seconds}
           </h3>
         </div>
-        <p className="text-lg font-Cormorant font-normal text-white mt-1 text-center w-full">
+        <p className="text-lg font-Cormorant font-medium  text-black mt-1 text-center w-full">
           seconds
         </p>
       </div>

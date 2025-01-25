@@ -4,7 +4,7 @@ const HighlightsCard = ({ title, description, image, buttonText }) => {
   return (
     <div className="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30 mx-4">
       {/* Image Container */}
-      <div className="h-96 w-72 sm:w-64 md:w-72 lg:w-80">
+      <div className="h-[30rem] w-[20rem] sm:w-[22rem] md:w-[24rem] lg:w-[26rem]">
         <img
           className="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-110"
           src={image}
