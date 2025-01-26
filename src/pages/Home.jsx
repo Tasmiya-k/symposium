@@ -14,13 +14,12 @@ const Home = () => {
         <div className="absolute inset-0 bg-white bg-opacity-60"></div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white px-6 sm:px-10 py-12 space-y-6">
-          <h3 className="text-lg sm:text-2xl md:text-3xl font-bold text-red-500">
+        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white space-y-6 px-4 sm:px-6">
+          <h3 className="text-xl sm:text-3xl md:text-4xl font-bold text-red-500 pt-4">
             ISTE Approved
           </h3>
-
           {/* Title Image */}
-          <div className="w-4/5 sm:w-3/4 md:w-2/3 max-w-2xl">
+          <div className="w-full max-w-lg sm:max-w-xl md:max-w-3xl mt-0">
             <img
               src="/Title_sympo_.png"
               alt="Header"
@@ -29,7 +28,7 @@ const Home = () => {
           </div>
 
           {/* Date Image */}
-          <div className="w-4/5 sm:w-3/4 md:w-2/3 max-w-2xl">
+          <div className="w-full max-w-lg sm:max-w-xl md:max-w-3xl">
             <img
               src="Date_.png"
               alt="Date"
@@ -38,12 +37,12 @@ const Home = () => {
           </div>
 
           {/* TAS Logo */}
-          <div className="w-32 sm:w-48 md:w-56">
+          <div className="w-48 sm:w-64 md:w-72">
             <img src="tas.png" alt="TAS Logo" className="w-full mx-auto" />
           </div>
 
           {/* Theme Title */}
-          <h3 className="text-lg sm:text-2xl md:text-3xl font-bold text-red-500">
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-red-500 pb-4">
             Technology Advancements for Sustainability
           </h3>
         </div>
@@ -81,6 +80,7 @@ const Home = () => {
           />
         ))}
       </div>
+
 
       {/* Key Highlights Section */}
       <div className="text-center mt-16 px-4">
