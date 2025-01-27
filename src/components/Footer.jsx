@@ -13,7 +13,7 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-white text-black pt-16 pb-8 border-t border-red-500">
+        <footer className="bg-white text-black pt-16 pb-4 border-t border-red-500">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* College Info */}
@@ -43,7 +43,7 @@ const Footer = () => {
                                 href="/path-to-brochure.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-block px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
+                                className="inline-block px-2 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
                             >
                                 Symposium Brochure
                             </a>
@@ -129,7 +129,7 @@ const Footer = () => {
                     <p>
                         &copy; {currentYear} Vivekanand Education Society's Institute of Technology. All rights reserved.
                     </p>
-                    <div className="mt-2 space-x-4">
+                    {/* <div className="mt-2 space-x-4">
                         <a href="#" className="hover:text-red-500 transition duration-300">
                             Privacy Policy
                         </a>
@@ -137,7 +137,7 @@ const Footer = () => {
                         <a href="#" className="hover:text-red-500 transition duration-300">
                             Terms of Service
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </footer>

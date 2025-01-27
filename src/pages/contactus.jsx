@@ -22,16 +22,16 @@ const ContactUs = () => {
 
     return (
         <div className="min-h-screen bg-white text-gray-800">
-            <div className="container mx-auto px-6 py-10">
+            <div className="container mx-auto px-6 py-10 ">
                 {/* Page Header */}
                 <h1 className="text-3xl font-bold text-red-600 mb-10 text-center">
                     Contact Us
                 </h1>
 
                 {/* Contact Details Section */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
                     {/* Address Section */}
-                    <div className="space-y-6 bg-gray-100 rounded-lg p-6 shadow-lg">
+                    <div className="space-y-6 bg-gray-100 rounded-lg p-6 shadow-lg border-2 border-[#f60404]" >
                         <h2 className="text-2xl font-bold text-red-500 mb-4">
                             Our Address
                         </h2>
@@ -90,7 +90,7 @@ const ContactUs = () => {
                     </div>
 
                     {/* Contact People Section */}
-                    <div className="space-y-6 bg-gray-100 rounded-lg p-6 shadow-lg">
+                    <div className="space-y-6 bg-gray-100 rounded-lg p-6 shadow-lg border-2 border-[#f60404]">
                         <h2 className="text-2xl font-bold text-red-500 mb-4">
                             Contact Our Team
                         </h2>

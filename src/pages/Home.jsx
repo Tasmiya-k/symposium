@@ -7,7 +7,7 @@ import Countdown from "../components/Countdown";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-300">
+    <div className="min-h-screen">
       {/* Hero Section */}
       <div className="relative w-full min-h-screen bg-[url('/vesit_college.png')] bg-cover bg-center">
         {/* Overlay for opacity */}
@@ -95,7 +95,7 @@ const Home = () => {
       </div>
 
       {/* Number Section */}
-      <div className="flex flex-wrap justify-center gap-6 mx-6 px-4 mb-12 mt-12">
+      <div className="flex flex-wrap justify-center gap-6 mx-6 px-4 mt-12">
         <Number />
       </div>
     </div>
