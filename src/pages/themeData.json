@@ -15,8 +15,23 @@
     "image": "hackathon.jpeg"
   },
   {
-    "title": "Start-upshowcases : E-Summit",
+    "title": "E-Summit",
     "description": "Aims to create a dynamic platform for knowledge exchange, collaboration, and showcasing talent, empowering participants to turn ideas into impactful ventures through Panel Discussion, Podcasts, Hackpreneurship A special prize pool for the competition.",
     "image": "E-summit.jpeg"
+  },
+  {
+    "title": "Tech-Ignite: Knowledge Series",
+    "description": "A curated collection of educational sessions designed to foster learning, inspire innovation, and share insights centered around sustainability-focused themes.",
+    "image": "tech_ignite.jpeg"
+  },
+  {
+    "title": "Tech-Connect",
+    "description": "A unique opportunity to connect with peers, academics, and industry professionals to foster collaboration and knowledge exchange.",
+    "image": "tech_connect.jpeg"
+  },
+  {
+    "title": "Ph.D. Colloquium",
+    "description": "A platform for scholars to showcase their research, fostering innovation and academic excellence. A special prize pool for the competition.",
+    "image": "phd.jpeg"
   }
 ]
