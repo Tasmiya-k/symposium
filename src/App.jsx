@@ -7,6 +7,7 @@ import Committee from "./pages/committee";
 import ContactUs from "./pages/contactus";
 import PageNotFound from "./pages/PageNotFound";
 import Home from "./pages/Home";
+import TechIgnitePage from "./pages/TechIgnitePage";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/" element={<Home />} />
             <Route path="*" element={<PageNotFound />} />
+            <Route path="/themes/techignite" element={<TechIgnitePage />} />
           </Routes>
         </div>
         <Footer />

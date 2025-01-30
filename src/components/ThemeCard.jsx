@@ -1,51 +1,53 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importing Link from react-router-dom
 import themeData from "../pages/themeData.json";
 
 const ThemeCard = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-      {themeData.map((theme, index) => (
-        <div
-          key={index}
-          className="group relative bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-500 hover:rotate-2 hover:scale-105"
-        >
-          {/* Animated Gradient Background */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#f60404] via-[#ffa1a1] to-[#f60404] opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+      {themeData.map((theme, index) => {
+        const isClickable = Boolean(theme.detailsPage); // Check if there is a details page
 
-          {/* Theme Content */}
-          <div className="relative z-10 p-6">
-            {/* Theme Image */}
-            <img
-              src={theme.image}
-              alt={theme.title}
-              className="w-full h-40 object-cover rounded-lg mb-3 bg-[#f60404]"
-            />
+        const cardContent = (
+          <div className="group relative bg-white rounded-lg shadow-xl overflow-hidden transform transition-transform duration-500 hover:rotate-2 hover:scale-105">
+            {/* Animated Gradient Background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-[#f60404] via-[#ffa1a1] to-[#f60404] opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
 
-            {/* Theme Title */}
-            <h2 className="text-2xl font-bold text-[#f60404] mb-2">
-              {theme.title}
-            </h2>
+            {/* Theme Content */}
+            <div className="relative z-10 p-8">
+              {/* Theme Image */}
+              <img
+                src={theme.image}
+                alt={theme.title}
+                className="w-full h-40 object-cover rounded-lg mb-3 bg-[#f60404]"
+              />
 
-            {/* Theme Description */}
-            <p className="text-gray-700 text-md">{theme.description}</p>
+              {/* Theme Title */}
+              <h2 className="text-2xl font-bold text-[#f60404] mb-2">
+                {theme.title}
+              </h2>
 
-            {/* Register Button (Visible only if registerLink exists) */}
-            {theme.registerLink && (
-              <a
-                href={theme.registerLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block px-4 py-2 text-white bg-[#f60404] hover:bg-[#d90404] rounded-md text-sm transition duration-300"
-              >
-                Register Here
-              </a>
+              {/* Theme Description */}
+              <p className="text-gray-700 text-md">{theme.description}</p>
+            </div>
+
+            {/* Overlay for Hover Effect */}
+            <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+          </div>
+        );
+
+        return (
+          <div key={index}>
+            {isClickable ? (
+              <Link to={theme.detailsPage} className="block">
+                {cardContent}
+              </Link>
+            ) : (
+              cardContent
             )}
           </div>
-
-          {/* Overlay for Hover Effect */}
-          <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };

@@ -17,55 +17,51 @@ const committeeData = [
     {
         title: "Advisory Committee",
         members: [
-            { name: "Dr. Prasad Ramanathan", role: "Sr. Director, Capgemini", image: "/prasad.png" },
-            { name: "Shri. Pankaj Doke", role: "Senior Scientist, Tata Consultancy Services", image: "/pankaj.png" },
-            { name: "Mrs. Asha Ahuja", role: "Head of Digital Engineering, Cognizant", image: "/asha.png" },
-            { name: "Shri. Amit Rambhia", role: "MD, Panache Digilife Ltd.", image: "/amit.png" },
-            { name: "Dr. Archana Sharma", role: "Distinguished Scientist, BARC", image: "/archana.png" },
-            { name: "Shri. Devesh Rajadhyaksha", role: "Founder & CEO, CereLabs Pvt Ltd.", image: "path/to/image14.jpg" },
-            { name: "Dr. Prasad Ramanathan", role: "Sr. Advisor, Capgemini, Mumbai", image: "path/to/image15.jpg" },
-            { name: "Shri. Ajit Ambekar", role: "Software Engineer III, JP Morgan Chase", image: "path/to/image16.jpg" },
-            { name: "Dr. Amar Banerjee", role: "Ex-Senior Scientist, BARC", image: "path/to/image17.jpg" },
-            { name: "Shri. Suhas Bhide", role: "Director, Emerson Automation Solutions", image: "path/to/image18.jpg" },
-            { name: "Dr. Sanjay Thakur", role: "Head, R & D, Suyog Telematics Ltd", image: "path/to/image19.jpg" },
-            { name: "Shri. Milap Shah", role: "Co-founder, Print Stop & Hokey Pokey", image: "path/to/image20.jpg" },
+            { name: "Dr. Prasad Ramanathan", role: "Sr. Director, Capgemini" },
+            { name: "Shri. Pankaj Doke", role: "Senior Scientist, Tata Consultancy Services" },
+            { name: "Mrs. Asha Ahuja", role: "Head of Digital Engineering, Cognizant" },
+            { name: "Shri. Amit Rambhia", role: "MD, Panache Digilife Ltd." },
+            { name: "Dr. Archana Sharma", role: "Distinguished Scientist, BARC" },
+            { name: "Shri. Devesh Rajadhyaksha", role: "Founder & CEO, CereLabs Pvt Ltd." },
+            { name: "Dr. Prasad Ramanathan", role: "Sr. Advisor, Capgemini, Mumbai" },
+            { name: "Shri. Ajit Ambekar", role: "Software Engineer III, JP Morgan Chase" },
+            { name: "Dr. Amar Banerjee", role: "Ex-Senior Scientist, BARC" },
+            { name: "Shri. Suhas Bhide", role: "Director, Emerson Automation Solutions" },
+            { name: "Dr. Sanjay Thakur", role: "Head, R & D, Suyog Telematics Ltd" },
+            { name: "Shri. Milap Shah", role: "Co-founder, Print Stop & Hokey Pokey" },
         ],
     },
     {
         title: "Chairperson",
         members: [
-            { name: "Dr.(Mrs.) J.M.Nair", role: "Principal, VESIT (Chairperson)", image: "path/to/image21.jpg" },
-            { name: "Dr.(Mrs.) M.VijayLakshmi", role: "Vice-Principal, VESIT (Co-Chairperson)", image: "path/to/image22.jpg" },
+            { name: "Dr.(Mrs.) J.M.Nair", role: "Principal, VESIT (Chairperson)" },
+            { name: "Dr.(Mrs.) M.VijayLakshmi", role: "Vice-Principal, VESIT (Co-Chairperson)" },
         ],
     },
     {
         title: "Steering Committee",
         members: [
-            { name: "Dr. Gresha Bhatia", role: "Convener, Dy. HOD, Computer Engineering", image: "/gresha.png" },
-            { name: "Dr. Sharmila Sengupta", role: "Secretary, Associate Professor, Computer Engineering", image: "/sharmila.png" },
-            { name: "Dr. Saylee Gharge", role: "Treasurer, Associate Professor, Electronics & Telecommunication", image: "/saylee.png" },
+            { name: "Dr. Gresha Bhatia", role: "Convener, Dy. HOD, Computer Engineering" },
+            { name: "Dr. Sharmila Sengupta", role: "Secretary, Associate Professor, Computer Engineering" },
+            { name: "Dr. Saylee Gharge", role: "Treasurer, Associate Professor, Electronics & Telecommunication" },
         ],
     },
     {
         title: "Executive Committee",
         members: [
-            { name: "Dr. Nupur Giri", role: "HOD, Computer Engineering", image: "path/to/image26.jpg" },
-            { name: "Dr. Kavita Tewari", role: "HOD, Electronics & Computer Science", image: "path/to/image27.jpg" },
-            { name: "Dr. C. D. Rawat", role: "HOD, Electronics & Telecommunication", image: "path/to/image28.jpg" },
-            { name: "Dr. Shalu Chopra", role: "HOD, Information Technology", image: "path/to/image29.jpg" },
-            { name: "Dr. Sangeetha Prasanna Ram", role: "HOD, Automation & Robotics", image: "path/to/image30.jpg" },
-            { name: "Dr. ShivKumar Goel", role: "HOD, Master of Computer Applications", image: "path/to/image31.jpg" },
-            { name: "Mr. Vivek Umrikar", role: "HOD, Humanities & Applied Sciences", image: "path/to/image32.jpg" },
+            { name: "Dr. Nupur Giri", role: "HOD, Computer Engineering" },
+            { name: "Dr. Kavita Tewari", role: "HOD, Electronics & Computer Science" },
+            { name: "Dr. C. D. Rawat", role: "HOD, Electronics & Telecommunication" },
+            { name: "Dr. Shalu Chopra", role: "HOD, Information Technology" },
+            { name: "Dr. Sangeetha Prasanna Ram", role: "HOD, Automation & Robotics" },
+            { name: "Dr. ShivKumar Goel", role: "HOD, Master of Computer Applications" },
+            { name: "Mr. Vivek Umrikar", role: "HOD, Humanities & Applied Sciences" },
         ],
     },
     {
         title: "Event Sponsors",
         members: [
-            { name: "Comming Soon...", role: "", image: "" },
-            { name: "Comming Soon...", role: "", image: "" },
-            { name: "Comming Soon...", role: "", image: "" },
-
-
+            { name: "", role: "", image: "/sponsers/rotary.png" }
         ],
     },
 ];
@@ -120,6 +116,16 @@ const Committee = () => {
                                                     {member.name}
                                                 </h2>
                                                 <p className="text-sm text-gray-600">{member.role}</p>
+                                                {member.image && (
+                                                    <div className="flex justify-center">
+                                                        <img
+                                                            src={member.image}
+                                                            alt={member.name}
+                                                            className="h-14 object-cover"
+                                                        />
+                                                    </div>
+                                                )}
+
                                             </div>
                                         </li>
                                     ))}
@@ -127,6 +133,8 @@ const Committee = () => {
                             </div>
                         ))}
                 </div>
+
+
             </div>
         </div>
     );

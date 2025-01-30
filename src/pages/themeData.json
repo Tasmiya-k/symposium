@@ -22,8 +22,8 @@
   {
     "title": "Tech-Ignite: Knowledge Series",
     "description": "A curated collection of educational sessions designed to foster learning, inspire innovation, and share insights centered around sustainability-focused themes.",
-    "image": "events/tech_ignite_series.jpg",
-    "registerLink": "https://forms.gle/28wedr65eThpoNby6"
+    "image": "tech_ignite.jpeg",
+    "detailsPage": "/themes/techignite"
   },
   {
     "title": "Tech-Connect",

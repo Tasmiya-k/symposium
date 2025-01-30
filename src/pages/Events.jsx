@@ -96,7 +96,8 @@ const eventsData = {
                     time: "8:00 AM(15th Feb) - 8.00 PM(16th Feb)", topic: "Software and Hardware Hackathon ", venue: "Library, B22, Lab 401, 410"
                 },
             ],
-            registration: { name: "Hackthon", link: "https://bit.ly/4gSdjhi" }
+            registration: { name: "Hackthon", link: "https://bit.ly/4gSdjhi" },
+            brochure: { name: "Hackthon Brochure", link: "https://drive.google.com/file/d/1EIMcWpCGL18aD8DDRLQ5cwy-dUatD0NG/view?usp=sharing" }
         },
     ],
 }
@@ -166,19 +167,20 @@ const Events = () => {
                                             </div>
                                         ))}
                                     {session.registration && (
-                                        <div className="mt-4">
-                                            <a
-                                                href={session.registration.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="inline-block"
-                                            >
-                                                <button className="px-6 py-2 bg-red-500 text-white font-medium rounded hover:bg-red-700 transition">
-                                                    Register for {session.registration.name}
-                                                </button>
-                                            </a>
-                                        </div>
+                                        <a href={session.registration.link} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 mr-4">
+                                            <button className="px-6 py-2 bg-red-500 text-white font-medium rounded hover:bg-red-700 transition">
+                                                Register for {session.registration.name}
+                                            </button>
+                                        </a>
                                     )}
+                                    {session.brochure && (
+                                        <a href={session.brochure.link} target="_blank" rel="noopener noreferrer" className="inline-block mt-4">
+                                            <button className="px-6 py-2 bg-red-500 text-white font-medium rounded hover:bg-red-700 transition">
+                                                {session.brochure.name}
+                                            </button>
+                                        </a>
+                                    )}
+
                                     {session.tracks &&
                                         session.tracks.map((track, i) => (
                                             <div key={i} className="mb-4 bg-gray-50 p-3 rounded-md shadow-md border-2">
@@ -257,6 +259,17 @@ const Events = () => {
                                 className="text-blue-600 hover:underline"
                             >
                                 https://veshackit.ves.ac.in/
+                            </a>
+                        </p>
+                        <p>
+                            Brochure : {" "}
+                            <a
+                                href="https://drive.google.com/file/d/1EIMcWpCGL18aD8DDRLQ5cwy-dUatD0NG/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline"
+                            >
+                                View Brochure
                             </a>
                         </p>
                     </div>
