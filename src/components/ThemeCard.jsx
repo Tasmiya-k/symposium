@@ -13,7 +13,7 @@ const ThemeCard = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-[#f60404] via-[#ffa1a1] to-[#f60404] opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
 
           {/* Theme Content */}
-          <div className="relative z-10 p-8">
+          <div className="relative z-10 p-6">
             {/* Theme Image */}
             <img
               src={theme.image}
@@ -28,6 +28,18 @@ const ThemeCard = () => {
 
             {/* Theme Description */}
             <p className="text-gray-700 text-md">{theme.description}</p>
+
+            {/* Register Button (Visible only if registerLink exists) */}
+            {theme.registerLink && (
+              <a
+                href={theme.registerLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-block px-4 py-2 text-white bg-[#f60404] hover:bg-[#d90404] rounded-md text-sm transition duration-300"
+              >
+                Register Here
+              </a>
+            )}
           </div>
 
           {/* Overlay for Hover Effect */}
