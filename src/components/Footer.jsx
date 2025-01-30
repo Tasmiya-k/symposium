@@ -1,16 +1,20 @@
-import React from "react";
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Globe } from "lucide-react";
+import { Link } from "react-router-dom"
+import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Globe } from "lucide-react"
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
+    const currentYear = new Date().getFullYear()
 
     const socialLinks = [
         { icon: Twitter, href: "https://x.com/vesitedu?t=U2cLvfg26xZL8dA0vU8TdQ&s=09", label: "Twitter" },
         { icon: Facebook, href: "https://www.facebook.com/vesinstituteoftech?mibextid=ZbWKwL", label: "Facebook" },
         { icon: Instagram, href: "https://www.instagram.com/vesitedu?igsh=MjFqYWd0ZzBzMTZh", label: "Instagram" },
         { icon: Youtube, href: "https://www.youtube.com/@vesitube", label: "Youtube" },
-        { icon: Linkedin, href: "https://in.linkedin.com/school/vivekanand-education-societys-institute-of-technology-sindhi-society-chembur-mumbai-400-071/", label: "LinkedIn" },
-    ];
+        {
+            icon: Linkedin,
+            href: "https://in.linkedin.com/school/vivekanand-education-societys-institute-of-technology-sindhi-society-chembur-mumbai-400-071/",
+            label: "LinkedIn",
+        },
+    ]
 
     return (
         <footer className="bg-white text-black pt-16 pb-4 border-t border-red-500">
@@ -20,52 +24,45 @@ const Footer = () => {
                     <div className="space-y-6">
                         <div className="flex items-center space-x-4 bg-transparent">
                             {/* Logo */}
-                            <img
-                                src="./vesitlogo1.png"
-                                alt="VESIT Logo"
-                                className="h-20 object-contain"
-                            />
+                            <img src="./vesitlogo1.png" alt="VESIT Logo" className="h-20 object-contain" />
                             {/* Name and Designation */}
                             <div>
-                                <h3 className="text-lg font-semibold">
-                                    Vivekanand Education Society's Institute of Technology
-                                </h3>
-                                <span className="text-sm text-red-500 block mt-1">
-                                    Autonomous Institute
-                                </span>
+                                <h3 className="text-lg font-semibold">Vivekanand Education Society's Institute of Technology</h3>
+                                <span className="text-sm text-red-500 block mt-1">Autonomous Institute</span>
                             </div>
                         </div>
                         <p className="text-sm text-gray-700">
-                            Vivekanand Education Society's Institute of Technology (VESIT) established in 1984, is one of the premier autonomous engineering colleges affiliated with the University of Mumbai.
+                            Vivekanand Education Society's Institute of Technology (VESIT) established in 1984, is one of the premier
+                            autonomous engineering colleges affiliated with the University of Mumbai.
                         </p>
                         <div className="flex space-x-4">
-                            <a
-                                href="/path-to-brochure.pdf"
+                            <Link
+                                to="https://drive.google.com/file/d/1nguD5hPotYWdHibZ3S0Iib7uQACTyH2w/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-2 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
                             >
                                 Symposium Brochure
-                            </a>
-                            <a
-                                href="/path-to-schedule.pdf"
+                            </Link>
+                            <Link
+                                to="https://drive.google.com/file/d/1MtTRJ8CXg2bQIhZCqYd14SHFwXCHaWtr/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
                             >
                                 Symposium Schedule
-                            </a>
+                            </Link>
                         </div>
                         <div className="flex space-x-4">
                             {socialLinks.map((link) => (
-                                <a
+                                <Link
                                     key={link.label}
-                                    href={link.href}
+                                    to={link.href}
                                     aria-label={link.label}
                                     className="hover:text-red-500 transition duration-300 transform hover:scale-110"
                                 >
                                     <link.icon size={24} />
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
@@ -80,29 +77,28 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <Phone size={18} className="mr-2 text-red-500" />
-                                <a href="tel:+912261539400" className="hover:text-red-500 transition duration-300">
+                                <Link to="tel:+912261539400" className="hover:text-red-500 transition duration-300">
                                     +91 22 6153 9400
-                                </a>
+                                </Link>
                             </li>
                             <li className="flex items-center">
                                 <Mail size={18} className="mr-2 text-red-500" />
-                                <a href="mailto:vesit@ves.ac.in" className="hover:text-red-500 transition duration-300">
+                                <Link to="mailto:vesit@ves.ac.in" className="hover:text-red-500 transition duration-300">
                                     vesit@ves.ac.in
-                                </a>
+                                </Link>
                             </li>
                             <li className="flex items-center">
                                 <Globe size={18} className="mr-2 text-red-500" />
-                                <a
-                                    href="https://vesit.ves.ac.in/"
+                                <Link
+                                    to="https://vesit.ves.ac.in/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:text-red-500 transition duration-300"
                                 >
                                     website
-                                </a>
+                                </Link>
                             </li>
                         </ul>
-
                     </div>
 
                     {/* Google Map */}
@@ -126,22 +122,21 @@ const Footer = () => {
 
                 {/* Footer Bottom */}
                 <div className="mt-10 pt-4 border-t border-red-500 text-center text-sm text-gray-700">
-                    <p>
-                        &copy; {currentYear} Vivekanand Education Society's Institute of Technology. All rights reserved.
-                    </p>
+                    <p>&copy; {currentYear} Vivekanand Education Society's Institute of Technology. All rights reserved.</p>
                     {/* <div className="mt-2 space-x-4">
-                        <a href="#" className="hover:text-red-500 transition duration-300">
+                        <Link to="#" className="hover:text-red-500 transition duration-300">
                             Privacy Policy
-                        </a>
+                        </Link>
 
-                        <a href="#" className="hover:text-red-500 transition duration-300">
+                        <Link to="#" className="hover:text-red-500 transition duration-300">
                             Terms of Service
-                        </a>
+                        </Link>
                     </div> */}
                 </div>
             </div>
         </footer>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer
+

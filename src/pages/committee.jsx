@@ -5,7 +5,7 @@ const committeeData = [
     {
         title: "Patrons",
         members: [
-            { name: "Shri. B. L. Boolani", role: "Managing Trustee, VES" },
+            { name: "Shri. B. L. Boolani", role: "Managing Trustee, VESIT" },
             { name: "Shri. Suresh Malkani", role: "President, VES" },
             { name: "Shri. Rajesh Gehani", role: "Secretary, VES" },
             { name: "Shri. Prakash Lulla", role: "Treasurer, VES" },
@@ -34,13 +34,8 @@ const committeeData = [
     {
         title: "Chairperson",
         members: [
-            { name: "Dr.(Mrs.) J.M.Nair", role: "Principal, VESIT", image: "path/to/image21.jpg" },
-        ],
-    },
-    {
-        title: "Co-Chairperson",
-        members: [
-            { name: "Dr.(Mrs.) M.VijayLakshmi", role: "Vice-Principal, VESIT", image: "path/to/image22.jpg" },
+            { name: "Dr.(Mrs.) J.M.Nair", role: "Principal, VESIT (Chairperson)", image: "path/to/image21.jpg" },
+            { name: "Dr.(Mrs.) M.VijayLakshmi", role: "Vice-Principal, VESIT (Co-Chairperson)", image: "path/to/image22.jpg" },
         ],
     },
     {
@@ -93,8 +88,8 @@ const Committee = () => {
                         <button
                             key={section.title}
                             className={`px-5 py-3 rounded-lg text-sm font-medium transition-all duration-200 transform ${selectedTeam === section.title
-                                    ? "bg-red-600 text-white shadow-lg scale-105"
-                                    : "bg-gray-200 text-gray-700 hover:bg-gray-300 hover:shadow-md"
+                                ? "bg-red-600 text-white shadow-lg scale-105"
+                                : "bg-gray-200 text-gray-700 hover:bg-gray-300 hover:shadow-md"
                                 }`}
                             onClick={() => setSelectedTeam(section.title)}
                         >
