@@ -61,10 +61,10 @@ const committeeData = [
     {
         title: "Event Sponsors",
         members: [
-            { name: "Dr. Nupur Giri", role: "HOD, Computer Engineering", image: "path/to/image26.jpg" },
-            { name: "Dr. Kavita Tewari", role: "HOD, Electronics & Computer Science", image: "path/to/image27.jpg" },
-            { name: "Dr. C. D. Rawat", role: "HOD, Electronics & Telecommunication", image: "path/to/image28.jpg" },
-            { name: "Dr. Shalu Chopra", role: "HOD, Information Technology", image: "path/to/image29.jpg" },
+            { name: "Comming Soon...", role: "", image: "" },
+            { name: "Comming Soon...", role: "", image: "" },
+            { name: "Comming Soon...", role: "", image: "" },
+
 
         ],
     },
