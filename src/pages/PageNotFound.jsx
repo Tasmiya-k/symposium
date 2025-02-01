@@ -11,9 +11,6 @@ const PageNotFound = () => {
                 The page you're looking for doesn't exist or was removed.
             </p>
 
-            {/* Illustration (Optional: Can use an image or emoji) */}
-            <div className="mt-6 text-6xl">🚧</div>
-
             {/* Back to Home Button */}
             <Link
                 to="/"

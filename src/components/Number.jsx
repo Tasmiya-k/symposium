@@ -29,7 +29,7 @@ const Number = () => {
 
       animateNumber(setNum1, 5, 400);
       animateNumber(setNum2, 12, 200);
-      animateNumber(setNum3, 6000, 35);
+      animateNumber(setNum3, 2000, 35);
     }
   }, [inView]); // Run animation only when inView.
 
