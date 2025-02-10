@@ -35,24 +35,7 @@ const Footer = () => {
                             Vivekanand Education Society's Institute of Technology (VESIT) established in 1984, is one of the premier
                             autonomous engineering colleges affiliated with the University of Mumbai.
                         </p>
-                        <div className="flex space-x-4">
-                            <Link
-                                to="https://drive.google.com/file/d/19BSzwb1h4BWkG0zM4DJW2A6nmeZWU607/view?usp=sharing"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block px-2 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
-                            >
-                                Symposium Brochure
-                            </Link>
-                            <Link
-                                to="https://drive.google.com/file/d/13AfZ1ms4wDliLTjYm2__xDIIBK_o-iRZ/view?usp=sharing"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
-                            >
-                                Symposium Schedule
-                            </Link>
-                        </div>
+
                         <div className="flex space-x-4">
                             {socialLinks.map((link) => (
                                 <Link
