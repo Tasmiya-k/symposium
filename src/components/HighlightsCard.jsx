@@ -23,9 +23,6 @@ const HighlightsCard = ({ title, description, image, buttonText }) => {
         <p className="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
           {description}
         </p>
-        {/* <button className="rounded-full bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white shadow shadow-black/60">
-          {buttonText}
-        </button> */}
       </div>
     </div>
   );

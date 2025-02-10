@@ -50,18 +50,26 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row-span-1 col-span-full flex items-center justify-center mt-10 space-x-6">
+      <div className="col-span-full flex flex-col md:flex-row items-center justify-center mt-10 space-y-4 md:space-y-0 md:space-x-6">
         {/* Brochure (External Link) */}
-        <a href="https://drive.google.com/file/d/19BSzwb1h4BWkG0zM4DJW2A6nmeZWU607/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          <button className="px-6 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+        <a
+          href="https://drive.google.com/file/d/19BSzwb1h4BWkG0zM4DJW2A6nmeZWU607/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="w-56 h-14 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center justify-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
             <FileText size={20} />
             <span>View Brochure</span>
           </button>
         </a>
 
         {/* Schedule (External Link) */}
-        <a href="https://drive.google.com/file/d/13AfZ1ms4wDliLTjYm2__xDIIBK_o-iRZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          <button className="px-6 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+        <a
+          href="https://drive.google.com/file/d/13AfZ1ms4wDliLTjYm2__xDIIBK_o-iRZ/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="w-56 h-14 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center justify-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
             <FileText size={20} />
             <span>View Schedule</span>
           </button>
@@ -69,7 +77,7 @@ const Home = () => {
 
         {/* Events (Internal Link using react-router-dom) */}
         <Link to="/events">
-          <button className="px-6 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+          <button className="w-56 h-14 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center justify-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
             <CalendarDays size={20} />
             <span>View Events</span>
           </button>
@@ -100,7 +108,6 @@ const Home = () => {
           />
         ))}
       </div>
-
 
       {/* Key Highlights Section */}
       <div className="text-center mt-16 px-4">
