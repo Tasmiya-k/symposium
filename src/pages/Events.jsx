@@ -6,8 +6,17 @@ const eventsData = {
         {
             session: "Session 1",
             events: [
-                { time: "9:00 AM - 9:30 AM", topic: "Inauguration", venue: "Auditorium" },
-                { time: "9:30 AM - 10:00 AM", topic: "Keynote Address", venue: "Auditorium" },
+                {
+                    time: "9:00 AM - 9:30 AM",
+                    topic: "Inauguration",
+                    venue: "Auditorium"
+                },
+                {
+                    time: "9:30 AM - 10:00 AM",
+                    topic: "Keynote Address",
+                    speaker: "Mrs. Lekha Menon, Lead - Agile Infrastructure CoE Technology & Innovation, Cognitive Business Operations (Tata Consultancy Services)",
+                    venue: "Auditorium"
+                },
                 {
                     time: "10:30 AM - 11:30 AM",
                     topic: "Quantum State Initiation for QML",

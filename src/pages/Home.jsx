@@ -4,6 +4,8 @@ import HighlightsCard from "../components/HighlightsCard";
 import highlightsData from "./highlightsData.json";
 import Number from "../components/Number";
 import Countdown from "../components/Countdown";
+import { FileText, CalendarDays } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -48,12 +50,30 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="row-span-1 col-span-full flex items-center justify-center mt-10">
-        <a href="/events">
-          <button className="px-10 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
-            View Schedule
+      <div className="row-span-1 col-span-full flex items-center justify-center mt-10 space-x-6">
+        {/* Brochure (External Link) */}
+        <a href="https://drive.google.com/file/d/19BSzwb1h4BWkG0zM4DJW2A6nmeZWU607/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button className="px-6 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+            <FileText size={20} />
+            <span>View Brochure</span>
           </button>
         </a>
+
+        {/* Schedule (External Link) */}
+        <a href="https://drive.google.com/file/d/13AfZ1ms4wDliLTjYm2__xDIIBK_o-iRZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button className="px-6 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+            <FileText size={20} />
+            <span>View Schedule</span>
+          </button>
+        </a>
+
+        {/* Events (Internal Link using react-router-dom) */}
+        <Link to="/events">
+          <button className="px-6 py-3 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 text-white text-lg font-bold rounded-full flex items-center gap-2 transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg">
+            <CalendarDays size={20} />
+            <span>View Events</span>
+          </button>
+        </Link>
       </div>
 
       {/* Countdown Section */}
