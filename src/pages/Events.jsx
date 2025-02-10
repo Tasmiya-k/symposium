@@ -6,6 +6,7 @@ const eventsData = {
         {
             session: "Session 1",
             events: [
+                { time: "9:00 AM - 9:30 AM", topic: "Inauguration", venue: "Auditorium" },
                 { time: "9:30 AM - 10:00 AM", topic: "Keynote Address", venue: "Auditorium" },
                 {
                     time: "10:30 AM - 11:30 AM",
@@ -103,7 +104,7 @@ const eventsData = {
 }
 
 const registrationLinks = {
-    symposium: "https://forms.gle/Y7xUCvRZq18c3B5D9",
+    symposium: "https://forms.gle/eRFGiWAjmwt5y83A7",
     phd: "https://bit.ly/3BsKBnS",
     hackathon: "https://bit.ly/4gSdjhi",
 }
@@ -111,7 +112,7 @@ const registrationLinks = {
 const RegistrationButton = ({ link, text }) => (
     <a
         href={link}
-        target="_blank"
+        target="_blank" inauguration
         rel="noopener noreferrer"
         className="inline-block mt-4 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors duration-200"
     >

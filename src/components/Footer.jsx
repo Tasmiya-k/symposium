@@ -37,7 +37,7 @@ const Footer = () => {
                         </p>
                         <div className="flex space-x-4">
                             <Link
-                                to="https://drive.google.com/file/d/1nguD5hPotYWdHibZ3S0Iib7uQACTyH2w/view?usp=sharing"
+                                to="https://drive.google.com/file/d/19BSzwb1h4BWkG0zM4DJW2A6nmeZWU607/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-2 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
@@ -45,7 +45,7 @@ const Footer = () => {
                                 Symposium Brochure
                             </Link>
                             <Link
-                                to="https://drive.google.com/file/d/1MtTRJ8CXg2bQIhZCqYd14SHFwXCHaWtr/view?usp=sharing"
+                                to="https://drive.google.com/file/d/13AfZ1ms4wDliLTjYm2__xDIIBK_o-iRZ/view?usp=sharing"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-block px-4 py-2 text-white bg-red-500 hover:bg-red-600 rounded-md text-sm transition duration-300"
