@@ -30,23 +30,16 @@ const eventsData = {
         },
         {
             session: "Session 2",
-            tracks: [
+            events: [
                 {
-                    track: "Track 1",
+
                     time: "1:30 PM - 3:30 PM",
                     topic: "Medical Artificial Intelligence",
                     speaker: "Dr. Deepak Patkar, Director Medical Services, Nanavati Max Super Speciality Hospital, Mumbai",
                     venue: "Auditorium",
                     link: "/events/medicalai" // Added link
                 },
-                {
-                    track: "Track 2",
-                    time: "1:30 PM - 3:30 PM",
-                    topic: "Global financial and technological levers driving Sustainability",
-                    speaker: "Mr. Saumadeep Bakshi, Deputy General Manager (subcontinent) Sustainability- Decarbonisation & Energy, DP World",
-                    venue: "B32",
-                    link: "/events/globalfinance" // Added link
-                },
+
             ],
         },
     ],

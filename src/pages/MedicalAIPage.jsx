@@ -34,7 +34,7 @@ const MedicalAIPage = () => {
     return (
         <div className="min-h-screen bg-white flex flex-col items-center p-8">
             {/* Page Title */}
-            <h1 className="text-5xl font-bold text-red-600 mb-6">Medical AI Symposium</h1>
+            <h1 className="text-5xl font-bold text-red-600 mb-6">Medical Artificial Intelligence</h1>
 
             {/* Event Card */}
             <div className="w-full max-w-5xl flex flex-col md:flex-row bg-gray-100 shadow-lg rounded-xl overflow-hidden border-2 border-[#f60404]">

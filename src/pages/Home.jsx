@@ -65,7 +65,7 @@ const Home = () => {
 
         {/* Schedule (External Link) */}
         <a
-          href="https://drive.google.com/file/d/13AfZ1ms4wDliLTjYm2__xDIIBK_o-iRZ/view?usp=sharing"
+          href="https://drive.google.com/file/d/1PS-V3sHjlwuRw7Cb6zEG4QVkq9EjnpyT/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
