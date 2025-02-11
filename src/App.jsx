@@ -8,7 +8,10 @@ import ContactUs from "./pages/contactus";
 import PageNotFound from "./pages/PageNotFound";
 import Home from "./pages/Home";
 import TechIgnitePage from "./pages/TechIgnitePage";
-
+import MedicalAIPage from "./pages/MedicalAIPage";
+import ITSustainabilityPage from "./pages/ITSustainabilityPage";
+import GlobalFinanceTechPage from "./pages/GlobalFinanceTechPage";
+import QuantumQMLPage from "./pages/QuantumQMLPage";
 
 function App() {
   return (
@@ -36,6 +39,10 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="*" element={<PageNotFound />} />
             <Route path="/themes/techignite" element={<TechIgnitePage />} />
+            <Route path="/events/medicalai" element={<MedicalAIPage />} />
+            <Route path="/events/keynote" element={<ITSustainabilityPage />} />
+            <Route path="/events/globalfinance" element={<GlobalFinanceTechPage />} />
+            <Route path="/events/quantum" element={<QuantumQMLPage />} />
           </Routes>
         </div>
         <Footer />

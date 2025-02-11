@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import { ChevronDown, ChevronUp, Clock, MapPin, MicVocal, Calendar } from "lucide-react"
+import React, { useState } from "react";
+import { ChevronDown, ChevronUp, Clock, MapPin, MicVocal, Calendar } from "lucide-react";
 
 const eventsData = {
     "13th February 2025": [
@@ -15,13 +15,15 @@ const eventsData = {
                     time: "9:30 AM - 10:00 AM",
                     topic: "Keynote Address",
                     speaker: "Mrs. Lekha Menon, Lead - Agile Infrastructure CoE Technology & Innovation, Cognitive Business Operations (Tata Consultancy Services)",
-                    venue: "Auditorium"
+                    venue: "Auditorium",
+                    link: "/events/keynote" // Added link
                 },
                 {
                     time: "10:30 AM - 11:30 AM",
                     topic: "Quantum State Initiation for QML",
                     speaker: "Mr. Rajesh Shahastrabuddhe, Principal Consultant NFT Marketplace Rezoomex, Pune, Maharashtra",
                     venue: "Auditorium",
+                    link: "/events/quantum" // Added link
                 },
                 { time: "11:45 AM - 12:45 PM", topic: "Workshop on Quantum (QML)", venue: "B31, B32, B42" },
             ]
@@ -35,6 +37,7 @@ const eventsData = {
                     topic: "Medical Artificial Intelligence",
                     speaker: "Dr. Deepak Patkar, Director Medical Services, Nanavati Max Super Speciality Hospital, Mumbai",
                     venue: "Auditorium",
+                    link: "/events/medicalai" // Added link
                 },
                 {
                     track: "Track 2",
@@ -42,6 +45,7 @@ const eventsData = {
                     topic: "Global financial and technological levers driving Sustainability",
                     speaker: "Mr. Saumadeep Bakshi, Deputy General Manager (subcontinent) Sustainability- Decarbonisation & Energy, DP World",
                     venue: "B32",
+                    link: "/events/globalfinance" // Added link
                 },
             ],
         },
@@ -110,31 +114,42 @@ const eventsData = {
             brochure: { name: "Hackthon Brochure", link: "https://drive.google.com/file/d/1EIMcWpCGL18aD8DDRLQ5cwy-dUatD0NG/view?usp=sharing" }
         },
     ],
-}
+};
 
 const registrationLinks = {
     symposium: "https://forms.gle/eRFGiWAjmwt5y83A7",
     phd: "https://bit.ly/3BsKBnS",
     hackathon: "https://bit.ly/4gSdjhi",
-}
+};
 
 const RegistrationButton = ({ link, text }) => (
     <a
         href={link}
-        target="_blank" inauguration
+        target="_blank"
         rel="noopener noreferrer"
         className="inline-block mt-4 px-4 py-2 bg-red-500 text-white rounded-md hover:bg-red-600 transition-colors duration-200"
     >
         {text}
     </a>
-)
+);
+
+const KnowMoreButton = ({ link }) => (
+    <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-red-500 via-orange-500 to-red-500 rounded-full text-white"
+    >
+        Know More
+    </a>
+);
 
 const Events = () => {
-    const [expandedDay, setExpandedDay] = useState("13th February 2025")
+    const [expandedDay, setExpandedDay] = useState("13th February 2025");
 
     const toggleDay = (day) => {
-        setExpandedDay(expandedDay === day ? null : day)
-    }
+        setExpandedDay(expandedDay === day ? null : day);
+    };
 
     return (
         <div className="px-6 bg-gray-100 min-h-screen py-10">
@@ -174,6 +189,7 @@ const Events = () => {
                                                     <MapPin className="mr-2" size={18} />
                                                     {event.venue}
                                                 </p>
+                                                {event.link && <KnowMoreButton link={event.link} />} {/* Render Know More button if link exists */}
                                             </div>
                                         ))}
                                     {session.registration && (
@@ -207,6 +223,7 @@ const Events = () => {
                                                                 <MicVocal className="mr-2" size={18} />
                                                                 {topic.speaker}
                                                             </p>
+                                                            {topic.link && <KnowMoreButton link={topic.link} />} {/* Render Know More button if link exists */}
                                                         </div>
                                                     ))
                                                 ) : (
@@ -224,6 +241,7 @@ const Events = () => {
                                                             <MapPin className="mr-2" size={18} />
                                                             {track.venue}
                                                         </p>
+                                                        {track.link && <KnowMoreButton link={track.link} />} {/* Render Know More button if link exists */}
                                                     </>
                                                 )}
                                             </div>
@@ -286,8 +304,7 @@ const Events = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Events
-
+export default Events;
