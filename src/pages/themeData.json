@@ -2,37 +2,37 @@
   {
     "title": "Case Studies in Sustainability : ExpertTalks",
     "description": "Present real-world success stories from organizations adopting sustainable technologies and the measurable impact of those efforts.",
-    "image": "sustainibility.jpg"
+    "image": "sustainibility.webp"
   },
   {
     "title": "Technology Demonstrations : Workshops",
     "description": "Live demonstrations on Sustainability-Focused Themes",
-    "image": "tech_workshops.jpeg "
+    "image": "tech_workshops.webp "
   },
   {
     "title": "Hackathon for Sustainability:",
     "description": "Team-based competition to develop innovative solutions to real-world sustainability challenges within a limited timeframe. A special prize pool for the competition.",
-    "image": "hackathon.jpeg"
+    "image": "hackathon.webp"
   },
   {
     "title": "E-Summit",
     "description": "Aims to create a dynamic platform for knowledge exchange, collaboration, and showcasing talent, empowering participants to turn ideas into impactful ventures through Panel Discussion, Podcasts, Hackpreneurship A special prize pool for the competition.",
-    "image": "E-summit.jpeg"
+    "image": "E-summit.webp"
   },
   {
     "title": "Tech-Ignite: Knowledge Series",
     "description": "A curated collection of educational sessions designed to foster learning, inspire innovation, and share insights centered around sustainability-focused themes.",
-    "image": "tech_ignite.jpeg",
+    "image": "tech_ignite.webp",
     "detailsPage": "/themes/techignite"
   },
   {
     "title": "Tech-Connect",
     "description": "A unique opportunity to connect with peers, academics, and industry professionals to foster collaboration and knowledge exchange.",
-    "image": "tech_connect.jpeg"
+    "image": "tech_connect.webp"
   },
   {
     "title": "Ph.D. Colloquium",
     "description": "A platform for scholars to showcase their research, fostering innovation and academic excellence. A special prize pool for the competition.",
-    "image": "phd.jpeg"
+    "image": "phd.webp"
   }
 ]

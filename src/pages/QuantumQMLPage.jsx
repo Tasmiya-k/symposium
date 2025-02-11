@@ -17,7 +17,7 @@ const eventDetails = {
         name: "Rajesh Sahasrabuddhe",
         designation: "Principal Consultant, NFT Marketplace Rezoomex, Pune, Maharashtra",
     },
-    image: "/events/13feb_quantun.jpg",
+    image: "/events/13feb_quantun.webp",
 };
 
 const QuantumQMLPage = () => {

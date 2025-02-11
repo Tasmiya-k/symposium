@@ -16,7 +16,7 @@ const eventDetails = {
         name: "Mrs. Lekha Menon",
         designation: "IT Sustainability Lead, Tata Consultancy Services",
     },
-    image: "/events/13feb_Keynote.jpg",
+    image: "/events/13feb_Keynote.webp",
     patrons: [
         "Shri. B. L. Boolani, Managing Trustee, VESIT",
         "Dr. (Mrs.) J. M. Nair, Principal, VESIT",

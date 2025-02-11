@@ -17,7 +17,7 @@ const eventDetails = {
         designation: "Blockchain, Quantum Computing & Machine Learning Expert (IIT Delhi)",
     },
     registrationLink: "https://forms.gle/28wedr65eThpoNby6",
-    image: "/events/tech_ignite_series.jpg",
+    image: "/events/tech_ignite_series.webp",
     patrons: [
         "Shri. B. L. Boolani, Managing Trustee, VESIT",
         "Dr. Mrs. J. M. Nair, Principal, VESIT",

@@ -16,7 +16,7 @@ const eventDetails = {
         name: "Dr. Deepak Patkar",
         designation: "Director, Medical Services, Nanavati Max Super Speciality Hospital, Mumbai",
     },
-    image: "/events/13feb_deepakpatkar.jpg",
+    image: "/events/13feb_deepakpatkar.webp",
     patrons: [
         "Shri. B. L. Boolani, Managing Trustee, VESIT",
         "Dr. (Mrs.) J. M. Nair, Principal, VESIT",

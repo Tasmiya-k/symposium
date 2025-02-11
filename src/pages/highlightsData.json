@@ -3,42 +3,42 @@
     "id": 1,
     "title": "Quantum Computing",
     "description": "Quantum computing uses quantum mechanics to solve complex problems faster, revolutionizing cryptography, AI, and more.",
-    "image": "/themes/quantum_computing.jpg",
+    "image": "/themes/quantum_computing.webp",
     "buttonText": "See More"
   },
   {
     "id": 2,
     "title": "Medical Deep Learning",
     "description": "Focuses on cutting-edge advancements in deep learning techniques tailored for medical applications. These innovations are shaping the future of healthcare and",
-    "image": "/themes/dl_in_medicine.jpg",
+    "image": "/themes/dl_in_medicine.webp",
     "buttonText": "Learn More"
   },
   {
     "id": 3,
     "title": "BioInspiredAI",
     "description": "This field involves creating artificial intelligence systems inspired by natural processes, aiming to foster solutions for a greener and cleaner planet.",
-    "image": "/themes/bio_inspired_ai.jpg",
+    "image": "/themes/bio_inspired_ai.webp",
     "buttonText": "Explore"
   },
   {
     "id": 4,
     "title": "Telecommunication Infrastructure Optimization",
     "description": "Optimization of telecommunication infrastructure to enhance efficiency and reduce environmental impact, contributing to a more sustainable future.",
-    "image": "/themes/telecom.jpg",
+    "image": "/themes/telecom.webp",
     "buttonText": "Explore"
   },
   {
     "id": 5,
     "title": "Global Energy Solutions",
     "description": "Innovations aimed at improving energy efficiency and sustainability worldwide, working toward a cleaner planet.",
-    "image": "/themes/global_energy.jpg",
+    "image": "/themes/global_energy.webp",
     "buttonText": "Explore"
   },
   {
     "id": 6,
     "title": "MATLAB for Sustainability Applications",
     "description": "Utilizing MATLAB to develop and implement solutions that promote sustainability and address environmental challenges.",
-    "image": "/themes/matlab.png",
+    "image": "/themes/matlab.webp",
     "buttonText": "Explore"
   }
 ]

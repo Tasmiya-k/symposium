@@ -1,57 +1,65 @@
-import { Link } from "react-router-dom"
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Globe } from "lucide-react"
+import { Link } from "react-router-dom";
+import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail, Phone, MapPin, Globe } from "lucide-react";
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear()
+    const currentYear = new Date().getFullYear();
 
     const socialLinks = [
         { icon: Twitter, href: "https://x.com/vesitedu?t=U2cLvfg26xZL8dA0vU8TdQ&s=09", label: "Twitter" },
         { icon: Facebook, href: "https://www.facebook.com/vesinstituteoftech?mibextid=ZbWKwL", label: "Facebook" },
         { icon: Instagram, href: "https://www.instagram.com/vesitedu?igsh=MjFqYWd0ZzBzMTZh", label: "Instagram" },
-        { icon: Youtube, href: "https://www.youtube.com/@vesitube", label: "Youtube" },
+        { icon: Youtube, href: "https://www.youtube.com/@vesitube", label: "YouTube" },
         {
             icon: Linkedin,
             href: "https://in.linkedin.com/school/vivekanand-education-societys-institute-of-technology-sindhi-society-chembur-mumbai-400-071/",
             label: "LinkedIn",
         },
-    ]
+    ];
 
     return (
         <footer className="bg-white text-black pt-16 pb-4 border-t border-red-500">
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {/* College Info */}
-                    <div className="space-y-6">
+                    <section className="space-y-6" aria-labelledby="college-info">
                         <div className="flex items-center space-x-4 bg-transparent">
                             {/* Logo */}
-                            <img src="./vesitlogo1.png" alt="VESIT Logo" className="h-20 object-contain" />
+                            <img
+                                src="./vesitlogo1.webp"
+                                alt="Vivekanand Education Society's Institute of Technology (VESIT) Logo"
+                                className="h-20 object-contain"
+                            />
                             {/* Name and Designation */}
                             <div>
-                                <h3 className="text-lg font-semibold">Vivekanand Education Society's Institute of Technology</h3>
+                                <h3 id="college-info" className="text-lg font-semibold">
+                                    Vivekanand Education Society's Institute of Technology
+                                </h3>
                                 <span className="text-sm text-red-500 block mt-1">Autonomous Institute</span>
                             </div>
                         </div>
                         <p className="text-sm text-gray-700">
-                            Vivekanand Education Society's Institute of Technology (VESIT) established in 1984, is one of the premier
+                            Vivekanand Education Society's Institute of Technology (VESIT), established in 1984, is one of the premier
                             autonomous engineering colleges affiliated with the University of Mumbai.
                         </p>
 
-                        <div className="flex space-x-4">
+                        <nav aria-label="Social Media Links" className="flex space-x-4">
                             {socialLinks.map((link) => (
-                                <Link
+                                <a
                                     key={link.label}
-                                    to={link.href}
+                                    href={link.href}
                                     aria-label={link.label}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="hover:text-red-500 transition duration-300 transform hover:scale-110"
                                 >
                                     <link.icon size={24} />
-                                </Link>
+                                </a>
                             ))}
-                        </div>
-                    </div>
+                        </nav>
+                    </section>
 
                     {/* Contact Details */}
-                    <div className="space-y-6">
+                    <address className="space-y-6 not-italic">
                         <h3 className="text-xl font-semibold text-red-500">Contact Us</h3>
                         <ul className="space-y-4 text-sm text-gray-700">
                             <li className="flex items-start">
@@ -60,66 +68,78 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <Phone size={18} className="mr-2 text-red-500" />
-                                <Link to="tel:+912261539400" className="hover:text-red-500 transition duration-300">
+                                <a href="tel:+912261539400" className="hover:text-red-500 transition duration-300">
                                     +91 22 6153 9400
-                                </Link>
+                                </a>
                             </li>
                             <li className="flex items-center">
                                 <Mail size={18} className="mr-2 text-red-500" />
-                                <Link to="mailto:vesit@ves.ac.in" className="hover:text-red-500 transition duration-300">
+                                <a href="mailto:vesit@ves.ac.in" className="hover:text-red-500 transition duration-300">
                                     vesit@ves.ac.in
-                                </Link>
+                                </a>
                             </li>
                             <li className="flex items-center">
                                 <Globe size={18} className="mr-2 text-red-500" />
-                                <Link
-                                    to="https://vesit.ves.ac.in/"
+                                <a
+                                    href="https://vesit.ves.ac.in/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="hover:text-red-500 transition duration-300"
                                 >
-                                    website
-                                </Link>
+                                    Official Website
+                                </a>
                             </li>
                         </ul>
-                    </div>
+                    </address>
 
                     {/* Google Map */}
-                    <div className="space-y-6">
-                        <h3 className="text-xl font-semibold text-red-500">Find Us</h3>
+                    <section className="space-y-6" aria-labelledby="find-us">
+                        <h3 id="find-us" className="text-xl font-semibold text-red-500">Find Us</h3>
                         <div className="relative h-60 rounded overflow-hidden">
                             <iframe
                                 title="VESIT Location"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4094415404234!2d72.8892177!3d19.045727499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8add9569a29%3A0xb7ad04bf9a389df7!2sVivekanand%20Education%20Society&#39;s%20Institute%20Of%20Technology%20(VESIT)!5e0!3m2!1sen!2sin!4v1737008577029!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.4094415404234!2d72.8892177!3d19.045727499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8add9569a29%3A0xb7ad04bf9a389df7!2sVivekanand%20Education%20Society's%20Institute%20Of%20Technology%20(VESIT)!5e0!3m2!1sen!2sin!4v1737008577029!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
-                                allowFullScreen={false}
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
-                                className="shadow-md bor"
+                                className="shadow-md"
                             ></iframe>
                         </div>
-                    </div>
+                    </section>
                 </div>
 
                 {/* Footer Bottom */}
                 <div className="mt-10 pt-4 border-t border-red-500 text-center text-sm text-gray-700">
                     <p>&copy; {currentYear} Vivekanand Education Society's Institute of Technology. All rights reserved.</p>
-                    {/* <div className="mt-2 space-x-4">
-                        <Link to="#" className="hover:text-red-500 transition duration-300">
-                            Privacy Policy
-                        </Link>
-
-                        <Link to="#" className="hover:text-red-500 transition duration-300">
-                            Terms of Service
-                        </Link>
-                    </div> */}
                 </div>
             </div>
+
+            {/* Structured Data for SEO */}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "EducationalOrganization",
+                    "name": "Vivekanand Education Society's Institute of Technology",
+                    "url": "https://vesit.ves.ac.in/",
+                    "logo": "./vesitlogo1.webp",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Hashu Advani Memorial Complex, Collector's Colony, Chembur",
+                        "addressLocality": "Mumbai",
+                        "postalCode": "400074",
+                        "addressCountry": "IN"
+                    },
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+91 22 6153 9400",
+                        "contactType": "customer service"
+                    }
+                })
+            }} />
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
-
+export default Footer;

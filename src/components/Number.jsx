@@ -41,7 +41,7 @@ const Number = () => {
           <section className="grid gap-20 md:grid-cols-3 md:gap-16 justify-center items-center">
             {/* Block #1 */}
             <div className="container text-center">
-              <h2>
+              <p>
                 <div
                   className="flex justify-center text-red-600 text-5xl font-extrabold mb-2"
                   style={{ width: "6ch" }}
@@ -51,12 +51,12 @@ const Number = () => {
                 <div className="font-semibold text-2xl bg-clip-text text-gray-800 ">
                   Themes
                 </div>
-              </h2>
+              </p>
             </div>
 
             {/* Block #2 */}
             <div className="container text-center">
-              <h2>
+              <p>
                 <div
                   className="flex justify-center text-red-600 text-5xl font-extrabold mb-2"
                   style={{ width: "6ch" }}
@@ -66,12 +66,12 @@ const Number = () => {
                 <div className="font-semibold text-2xl bg-clip-text textgray-800">
                   Hours of Hacking
                 </div>
-              </h2>
+              </p>
             </div>
 
             {/* Block #3 */}
             <div className="container text-center">
-              <h2>
+              <p>
                 <div
                   className="flex justify-center text-red-600 text-5xl font-extrabold mb-2"
                   style={{ width: "6ch" }}
@@ -81,7 +81,7 @@ const Number = () => {
                 <div className="font-semibold text-2xl bg-clip-text textgray-800">
                   Participants
                 </div>
-              </h2>
+              </p>
             </div>
           </section>
         </div>

@@ -10,7 +10,6 @@ import Home from "./pages/Home";
 import TechIgnitePage from "./pages/TechIgnitePage";
 import MedicalAIPage from "./pages/MedicalAIPage";
 import ITSustainabilityPage from "./pages/ITSustainabilityPage";
-import GlobalFinanceTechPage from "./pages/GlobalFinanceTechPage";
 import QuantumQMLPage from "./pages/QuantumQMLPage";
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
         <meta name="keywords" content="Symposium, Sustainability, Hackathon, Technology Advancements, VESIT, " />
         <meta property="og:title" content="Symposium 2025" />
         <meta property="og:description" content="Explore sustainability innovations at Symposium 2025. Register now!" />
-        <meta property="og:image" content="/tas.png" />
+        <meta property="og:image" content="/tas.webp" />
         <meta property="og:url" content="https://symposiumvesit.vercel.app/" />
         <meta property="og:type" content="website" />
       </Helmet>
@@ -41,7 +40,6 @@ function App() {
             <Route path="/themes/techignite" element={<TechIgnitePage />} />
             <Route path="/events/medicalai" element={<MedicalAIPage />} />
             <Route path="/events/keynote" element={<ITSustainabilityPage />} />
-            <Route path="/events/globalfinance" element={<GlobalFinanceTechPage />} />
             <Route path="/events/quantum" element={<QuantumQMLPage />} />
           </Routes>
         </div>

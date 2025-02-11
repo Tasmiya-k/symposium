@@ -16,7 +16,7 @@ const eventDetails = {
         name: "Mr. Soumyadeep Baksi",
         designation: "Deputy General Manager (Subcontinent) - Sustainability- Decarbonisation & Energy, DP World"
     },
-    image: "/events/13feb_soumyadeep.jpg"
+    image: "/events/13feb_soumyadeep.webp"
 };
 
 const GlobalFinanceTechPage = () => {
