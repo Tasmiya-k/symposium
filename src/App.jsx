@@ -12,6 +12,11 @@ import MedicalAIPage from "./pages/MedicalAIPage";
 import ITSustainabilityPage from "./pages/ITSustainabilityPage";
 import QuantumQMLPage from "./pages/QuantumQMLPage";
 
+import GlobalEnergyPage from "./pages/GlobalEnergyPage";
+import TelecomPage from "./pages/TelecomPage";
+import BioInspiredAIPage from "./pages/BioInspiredAIPage";
+import SustainableInnovationPage from "./pages/SustainableInnovationPage";
+
 function App() {
   return (
     <>
@@ -41,6 +46,13 @@ function App() {
             <Route path="/events/medicalai" element={<MedicalAIPage />} />
             <Route path="/events/keynote" element={<ITSustainabilityPage />} />
             <Route path="/events/quantum" element={<QuantumQMLPage />} />
+
+            <Route path="/events/genergy" element={<GlobalEnergyPage />} />
+            <Route path="/events/telecom" element={<TelecomPage />} />
+            <Route path="/events/bioinspire" element={<BioInspiredAIPage />} />
+            <Route path="/events/sustainable" element={<SustainableInnovationPage />} />
+
+
           </Routes>
         </div>
         <Footer />

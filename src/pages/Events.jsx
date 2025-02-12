@@ -16,14 +16,14 @@ const eventsData = {
                     topic: "Keynote Address",
                     speaker: "Mrs. Lekha Menon, Lead - Agile Infrastructure CoE Technology & Innovation, Cognitive Business Operations (Tata Consultancy Services)",
                     venue: "Auditorium",
-                    link: "/events/keynote" // Added link
+                    link: "/events/keynote"
                 },
                 {
                     time: "10:30 AM - 11:30 AM",
                     topic: "Quantum State Initiation for QML",
                     speaker: "Mr. Rajesh Shahastrabuddhe, Principal Consultant NFT Marketplace Rezoomex, Pune, Maharashtra",
                     venue: "Auditorium",
-                    link: "/events/quantum" // Added link
+                    link: "/events/quantum"
                 },
                 { time: "11:45 AM - 12:45 PM", topic: "Workshop on Quantum (QML)", venue: "B31, B32, B42" },
             ]
@@ -52,12 +52,14 @@ const eventsData = {
                     topic: "Sustainable Innovation: Integrating MATLAB and UAVs",
                     speaker: "Dr. Pranav Lad, Senior Engineer, Education Team, @ MathWorks (MATLAB and Simulink)",
                     venue: "Auditorium",
+                    link: "/events/sustainable"
                 },
                 {
                     time: "10:30 AM - 12:30 PM",
                     topic: "MATLAB Workshop",
                     speaker: "Dr. Pranav Lad, Senior Engineer, Education Team, @ MathWorks (MATLAB and Simulink)",
-                    venue: "B31, B32, B42"
+                    venue: "B31, B32, B42",
+                    link: "/events/sustainable"
                 },
             ],
         },
@@ -67,8 +69,8 @@ const eventsData = {
                 {
                     track: "Track 1",
                     topics: [
-                        { time: "1:30 PM - 2:30 PM", topic: "Global Energy Scenario", speaker: "Dr. C V Prasad Rao, Energy and sustainability expert." },
-                        { time: "2:30 PM - 3:30 PM", topic: "Telecom Tower Management", speaker: "Dr Sanjay Singh Thakur, Head R&D Suyog Telematics Mumbai." },
+                        { time: "1:30 PM - 2:30 PM", topic: "Global Energy Scenario", speaker: "Dr. C V Prasad Rao, Energy and sustainability expert.", link: "/events/genergy" },
+                        { time: "2:30 PM - 3:30 PM", topic: "Telecom Tower Management", speaker: "Dr Sanjay Singh Thakur, Head R&D Suyog Telematics Mumbai.", link: "/events/telecom" },
                     ],
                     venue: "B32",
                 },
@@ -78,6 +80,7 @@ const eventsData = {
                     topic: "Bio Inspired Approaches for AI",
                     speaker: "Dr. Sasikumar M, Executive Director, CDAC, Mumbai",
                     venue: "B42",
+                    link: "/events/bioinspire"
                 },
             ],
         },
