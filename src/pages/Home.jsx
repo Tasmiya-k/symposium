@@ -40,7 +40,12 @@ const Home = () => {
 
           {/* TAS Logo */}
           <div className="w-48 sm:w-64 md:w-72">
-            <img src="tas.webp" alt="TAS - Technical Advancement Symposium" className="w-full mx-auto" loading="lazy" />
+            <img
+              src="tas.webp"
+              alt="TAS - Technical Advancement Symposium"
+              className="w-full mx-auto"
+              loading="lazy"
+            />
           </div>
 
           {/* Event Theme */}
@@ -87,8 +92,12 @@ const Home = () => {
         </Link>
       </section>
 
-
       {/* Countdown Timer */}
+      <section className="text-center mt-10 px-4">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-red-500">
+          Ends in
+        </h2>
+      </section>
       <section className="row-span-1 col-span-full mt-10 px-6">
         <Countdown />
       </section>
