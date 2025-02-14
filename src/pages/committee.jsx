@@ -62,7 +62,8 @@ const committeeData = [
         title: "Event Sponsors",
         members: [
             { name: "", role: "", image: "/sponsers/rotary.png" },
-            { name: "", role: "", image: "/sponsers/sponsors.png" }
+            { name: "", role: "", image: "/sponsers/sponsors.png" },
+            { name: "", role: "", image: "/sponsers/marchup.jpg" }
         ],
     },
 ];
