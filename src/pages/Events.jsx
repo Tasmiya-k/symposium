@@ -141,7 +141,7 @@ const KnowMoreButton = ({ link }) => (
 );
 
 const Events = () => {
-    const [expandedDay, setExpandedDay] = useState("13th February 2025");
+    const [expandedDay, setExpandedDay] = useState("15th February 2025");
 
     const toggleDay = (day) => {
         setExpandedDay(expandedDay === day ? null : day);
